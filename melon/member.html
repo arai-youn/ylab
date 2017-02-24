@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+Transitional//EN""http://www.w3.org/TR/xhtml1/
+DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<title>MelOn::음악이 필요한 순간, 멜론</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/member.css" />
+		<link rel="stylesheet" type="text/css" href="css/quick.css" />
+		<style type="text/css">
+			
+		</style>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+		<script type="text/javascript" src="js/quick.js"></script>
+	</head>
+
+	<body>
+		<div id="wrap">
+
+			<!-- header -->
+		
+			<div class="headBg">
+				
+		
+				<div id="header">
+					<h1><a href="../melon/index.html" alt="xhtml" title="Melon 포트폴리오 사이트 메인 바로가기"><img src="images/common/logo_melon.png" alt="Melon 로고" title="Melon 로고 - 홈으로 이동" /></a></h1>
+					<h2 class="hidden">주메뉴</h2>
+						<ul class="mainMenu">
+							<li class="menuList1"><a href="">회원정보</a></li>
+							<li class="menuList2"><a href="">내 정보 보호</a></li>
+							<li class="menuList3"><a href="">개인정보 이용내역</a></li>
+							<li class="menuList4"><a href="">내 이용권/결제정보</a></li>
+							<li class="menuList5"><a href="">이벤트 응모내역</a></li>
+						</ul>
+					<p class="topUserinfo"><span id="userId"><strong>lalala</strong></span>님
+						<input type="button" class="logoutIcon" name="logoutIcon" title="로그아웃 버튼" value="로그아웃" />
+					</p>
+				</div>
+			</div>
+
+			<!-- header end -->
+
+
+			<!-- container -->
+
+			<div id="container">
+				<div id="infoSet">
+					<div id="memInfo">
+						<h2>기본정보관리</h2>
+						<ul class="memInfoset">
+							<li class="memInfoset1"><a href=""><strong>기본정보관리</strong></a></li>
+							<li class="memInfoset2"><a href="">비밀번호 변경</a></li>
+							<li class="memInfoset3"><a href="">SNS 계정연결</a></li>
+							<li class="memInfoset4"><a href="">회원탈퇴</a></li>
+						</ul>
+						<form method="post" action="" class="infoSetform">
+							<fieldset>
+								<legend class="hidden">기본정보관리</legend>
+								<table>
+									<tbody>
+										<tr>
+											<th class="tableTop">아이디</th>
+											<td class="tableTop">lalala</td>
+										</tr>
+										<tr>
+											<th><label for="userNick">닉네임</label></th>
+											<td><input type="text" id="userNick" name="userNick"/>
+												<input type="button"  class="nickCheck" value="중복확인" />
+											</td>
+										</tr>
+										<tr>
+											<th>이름</th>
+											<td><span class="userName">말랑한 멜론</span>
+												<input type="button"  class="userCheck" value="본인확인" /><br />
+												<p class="noticeInfo">본인확인을 통해 이름 및 성별정보를 확인하실 수 있습니다.</p>
+											</td>
+										</tr>
+										<tr>
+											<th>생년월일</th>
+											<td><span class="birthDay">1980년 01월 00일</span></td>
+										</tr>
+										<tr>
+											<th>성별</th>
+											<td><span class="userSex">제 3의 성</span></td>
+										</tr>
+										<tr>
+											<th><label for="userEmail">이메일</label></th>
+											<td><input type="text" id="userEmail" name="userEmail" />
+												<input type="button" class="emailModify" value="정보변경요청" />
+											</td>
+										</tr>
+										<tr>
+											<th>할인이벤트안내<br />광고성 이메일 수신</th>
+											<td>
+												<input type="radio" id="emailY" name="emailY/N" />수신함
+												<input type="radio" id="emailN" name="emailY/N" />수신안함
+												<p class="noticeInfo">할인 관련 이벤트 관련 소식을 받습니다. 중요한 공지사항과 알림 등은 수신여부와 관련이 없이 발송됩니다.</p>
+											</td>
+										</tr>
+										<tr>
+											<th><label for="userMoblie">휴대폰 번호</label></th>
+											<td><input type="text" id="userMoblie" name="userMoblie" />
+												<input type="button" class="moblieModify" value="정보변경요청" /></td>
+										</tr>
+										<tr>
+											<th>할인이벤트안내<br />광고성 SMS 수신</th>
+											<td>
+												<input type="radio" id="emailY" name="emailY/N" />수신함
+												<input type="radio" id="emailN" name="emailY/N" />수신안함
+												<p class="noticeInfo">할인 관련 이벤트 관련 소식을 받습니다. 중요한 공지사항과 알림 등은 수신여부와 관련이 없이 발송됩니다.</p>
+											</td>
+										</tr>
+										<tr>
+											<th class="tableBottom">주소</th>
+											<td class="tableBottom">
+												<input type="button" class="postNum" value="우편번호 찾기" />
+												<input type="text" id="postNum1" name="postNum1" size="3" />-<input type="text" id="postNum2" name="postNum2" size="3"/></br />
+												<input type="text" id="userAddress" name="userAddress" size="40" />
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</fieldset>
+						</form>
+						<p class="memInfobtn"><input type="button" value="회원정보 변경" /></p>
+					</div>
+				
+				
+				</div> <!-- infoSet end -->
+
+				<!-- container end -->
+
+
+
+			<!-- footer -->
+
+
+			<div id="footer">
+				
+				<ul class="footerList">
+					<li class="footerLis1"><a href="">이용약관</a></li>
+					<li><a href=""><strong>개인정보취급방침</strong></a></li>
+					<li><a href="">청소년보호정책</a></li>
+				</ul>
+			
+				
+				<p>
+					<span class="pSpanfist">서울시 강남구 테헤란로 103길 17 정석빌딩</span><span>대표이사 : 신원수</span><span>사업자등록번호 :  123-13-456789</span>
+					<span>통신판매업 신고번호 : 제2011-서울강남-02008호</span>
+					<span class="pSpanfist">문의전화(평일 09:00~18:00) : 1566-7727(유료)</span><span>&copy; LOEN Entertainment, Inc. All rights reserved</span>
+				</p>
+
+			</div>
+
+			<!-- footer end -->
+
+			<div class="quick">
+				<dl>
+					<dt><a href="" alt="포트폴리오 바로가기" ><img src="images/common/portfolio_logo.png" alt="포트폴리오 바로가기" /></dt>
+					<dd>
+						<ul>
+							<li><a href="../index.html">Melon_Main</a></li>
+							<li><a href="chart.html">Melon_chart</a></li>
+							<li><a class="on" href="member.html">Melon_member</a></li>
+							<li><a href="weekly.html">Melon_weekly</a></li>
+							<!-- <li><a href="artplust.html">Melon_artplust</a></li> -->
+						</ul>
+					</dd>
+				</dl>	
+			</div><!--//quickmenu -->
+
+		</div>  <!-- wrap end -->
+		
+	</body>
+</html>

@@ -1,0 +1,1346 @@
+@charset "utf-8";
+
+#wrap {
+	background: #eeedee;
+	
+}
+	hr { display: none;	}
+
+	.headBg {
+		width:100%;
+		height:101px;
+		margin:0 auto;
+		background-color:#2b2b2b;
+		/* background:url('../images/weekly/bg_header_150209.jpg')no-repeat bottom; */
+		
+	}
+
+	.headerWrap {
+		width:100%;
+		height:34px;
+		margin:0 auto;
+		border-bottom: 1px solid #353535;
+		background-color:#2b2b2b;
+	}
+
+
+	#header {
+		position:relative;
+		margin:0 auto;
+		width:1008px;
+		height:101px;
+	}
+
+		#header h1 {
+			position:absolute;
+			top:60px;
+			left:0;
+			width:203px;
+			height:16px;
+			font-size:0;
+			background:url('../images/weekly/sp_header.png') 0px 164px;
+		}
+
+		
+		#header h1 span.logo a {
+			display:inline-block;
+			width:62px;
+			height:16px;
+		}
+
+		#header h1 span.title a {
+			display:inline-block;
+			width:140px;
+			height:16px;
+		}
+
+		/* mainMenu */
+		#mainMenu {
+			position:absolute;
+			top:34px;
+			right:0;
+		}
+
+		#mainMenu ul li {
+			float:left;
+		}
+		#mainMenu ul li a {
+			display:inline-block;
+			height:66px;
+			padding-top:25px;
+			padding-left:51px;
+			font-size:17px;
+			letter-spacing:-2px;
+			text-decoration:none;
+			color:#fafafa;
+		}
+
+		#mainMenu ul li a:hover {
+			color:#00bcb7;
+		}
+
+
+		/* topMenu */
+
+
+		.topMenuR {
+			position:absolute;
+			top:0;
+			right:0;
+			width:563px;
+			height:37px;
+		}
+		
+		.topMenuR ul {
+			
+		}
+
+
+		.topMenuR ul li {
+			float:left;
+			padding-top:10px;
+			padding-left:9px;
+			padding-right:9px;
+			font-size:11px;
+			background:url('../images/weekly/l_line.png')no-repeat right 70%;
+		}
+
+		.topMenuR p span.listMore {
+			float:left;
+		}
+
+		.topMenuR p span.listMore a {
+			float:left;
+			display:inline-block;
+			width:45px;
+			padding-top:9px;
+			padding-left:10px;
+			padding-right:7px;
+			font-size:11px;
+			background:url('../images/weekly/arrow_down.png')no-repeat right 70%;
+		}
+		
+		.topMenuR p span.listMore a:hover {
+			color:#00bcb7;
+			background:url('../images/weekly/arrow_down_colored.png')no-repeat right 70%;
+		}
+
+		.topMenuR p span.btnLogin {
+			float:left;
+			display:inline-block;
+			width:42px;
+			height:22px;
+			margin-top:6px;
+			margin-left:15px;
+			background:url('../images/weekly/sp_gnb.png') -580px -7px no-repeat
+		}
+
+		.topMenuR p span.btnLogin a {
+			display:inline-block;
+			width:42px;
+			height:22px;
+			font-size:0px;
+		}
+		
+		.topMenuR a {
+			text-decoration:none;
+		}
+
+
+	/* container */
+
+		#container {
+			position:relative;
+			width:100%;
+			margin:0 auto;
+			height:4300px;
+			background:#eeedee;
+		}
+		#timeSlide {
+			width:100%;
+			height:34px;
+			z-index:100;
+			background:#00bcb7;
+		}
+		#timeSlide ul {
+			overflow:hidden;
+			width:100%;
+			height:34px;
+			margin-left:208px;
+			background:#070707;
+		}
+		#timeSlide ul li {
+			float:left;
+			width:82px;
+			height:34px;
+			border-left:1px solid #393939;
+		}
+
+		#timeSlide ul li.timelast{
+			border-right:1px solid #393939;
+		}
+
+		#timeSlide ul li a {
+			display:inline-block;
+			width:82px;
+			height:34px;
+			padding-top:9px;
+			font-size:14px;
+			text-align:center;
+			text-decoration:none;
+			color:#ffffff;
+			background:#070707;
+		}
+		#timeSlide ul li a:hover {
+			background:#00bcb7;
+		}
+
+		#timelineWrap {
+			position:relative;
+			margin-top:34px;
+			width:100%;
+			height:100%;
+			background:url('../images/weekly/bg_footer_150209.jpg') no-repeat bottom;
+		}
+
+
+		#timelineArea {
+			position:relative;
+			width:100%;
+			height:100%;
+			margin-top:-34px;
+			background:url('../images/weekly/bg_header_150209.jpg') no-repeat top;
+		}
+
+		
+
+		.timelineFix {
+			position:absolute;
+			top:-34px;
+			left:50%;
+			width:1px;
+			height:85px;
+			margin-left:-504px;
+			background:#7a7a7a;
+		}
+
+		.timelineFix span.footDot {
+			display:inline-block;
+			width:7px;
+			height:85px;
+			margin-left:-3px;
+			background:url('../images/weekly/icon_timeline_circle.png')no-repeat bottom left;
+		}
+
+		.timelineBg {
+			position:absolute;
+			top:200px;
+			left:50%;
+			width:1px;
+			margin-left:-504px;
+			background:#7a7a7a;
+		}
+		
+		.timelineBg span.topDot {
+			display:inline-block;
+			width:7px;
+			height:10px;
+			margin-left:-3px;
+			margin-bottom:3px;
+			background:url('../images/weekly/icon_timeline_circle.png')no-repeat left top;
+		}
+
+		.timelineBg span.footDot {
+			display:inline-block;
+			width:7px;
+			height:10px;
+			margin-left:-3px;
+			margin-bottom:3px;
+			background:url('../images/weekly/icon_timeline_circle.png')no-repeat left bottom;
+		}
+		
+
+		.timelineBg span.greenBox {
+			position:absolute;
+			top:-140px;
+			left:-60px;
+			display:inline-block;
+			width:119px;
+			height:117px;
+			padding-top:24px;
+			font-size:28px;
+			line-height:1.2;
+			text-align:center;
+			color:#ffffff;
+			background:url('../images/weekly/bg_circle1.png')no-repeat;
+		}
+		
+		#chartArea {
+			margin-left:99px;
+			width:839px;
+		}
+
+			#titleWrap {
+				position:relative;
+			}
+
+			#titleWrap h1 {
+				position:absolute;
+				top:-150px;
+				line-height:1.4;
+			}
+
+			#titleWrap h1 span.conTitle {
+				font-size:43px;
+				letter-spacing:-4px;
+				color:#1d1d1d;
+			}
+
+			#titleWrap h1 span.conTime {
+				font-size:28px;
+				letter-spacing:-1px;
+				font-weight: normal;
+				color:#999999;
+			}
+			
+			.chartWrap {
+				border:1px solid #cccccc;
+				background:#ffffff;
+			}
+
+
+		/* .weeklyList */
+		.weeklyList ol li {
+			position:relative;
+			width:792px;
+			padding-top:29px;
+			margin-left:29px;
+			padding-bottom:29px;
+			border-bottom:1px solid #cccccc;
+		}
+
+		.weeklyList ol li.last {
+			border-bottom:none;
+		}
+
+		
+		.weeklyList ol li.first div.thumb {
+			position:relative;
+			width:248px;
+			height:234px;
+		}
+		.weeklyList ol li.first div.thumb img {
+			width:248px;
+			height:234px;
+			border:1px solid #cccccc;
+		}
+		.weeklyList ol li.first div.thumb span.icon1st {
+			position:absolute;
+			top:0px;
+			left:0px;
+			display:inline-block;
+			width:89px;
+			height:84px;
+			background:url('../images/weekly/rank_badge_1.png')no-repeat;
+		}
+
+		.weeklyList ol li.first div.thumb span.trophy1st {
+			position:absolute;
+			top:11px;
+			right:11px;
+			display:inline-block;
+			width:97px;
+			height:30px;
+
+			background:url('../images/weekly/icon_trophy.png') 0 90px;
+		}
+
+		.weeklyList ol li.first div.voteInfo {
+			position:absolute;
+			top:76px;
+			left:296px;
+		}
+
+		.weeklyList ol li.first div.artistInfo {
+			width:496px;
+			padding-bottom:15px;
+			line-height:1.4;
+			border-bottom:1px solid #cccccc;
+		}
+
+		.weeklyList ol li.first div.artistInfo span.weeklyArtist {
+			display:inline-block;
+			font-weight:bold;
+			font-size:19px;
+			color:#000000;
+		}
+
+		.weeklyList ol li.first div.artistInfo span.weeklySong {
+			display:inline-block;
+			height:25px;
+			padding-left:30px;
+			font-weight:bold;
+			font-size:19px;
+			color:#666666;
+			background:url('../images/weekly/img_play_w27.png') no-repeat;
+		}
+
+		.weeklyList ol li.first div.artistInfo span a {
+			text-decoration:none;
+		}
+
+		.weeklyList ol li.first div.artistInfo span.weeklySong a {
+			display:inline-block;
+			width:179px;
+			height:25px;	
+		}
+
+		.weeklyList ol li.first div.rateBox {
+			padding-top:32px;
+		}
+
+		.weeklyList ol li.first div.rateBox span.rateResult	{
+			display:inline-block;
+			font-size:16px;
+			letter-spacing:1px;
+			color:#000000;
+			margin-bottom:10px;
+		}
+
+		.weeklyList ol li.first div.ratespan span.rate1 {
+			display:inline-block;
+			width:190px;
+			height:20px;
+			text-align:center;
+			font-weight:bold;
+			color:#ffffff;
+			background:#0da59f;
+		}
+
+		.weeklyList ol li.first div.ratespan span.rate2 {
+			display:inline-block;
+			width:98px;
+			height:20px;
+			text-align:center;
+			font-weight:bold;
+			color:#ffffff;
+			background:#f15e46;
+		}
+
+		.weeklyList ol li.first div.ratespan span.totalrate {
+			font-weight:bold;
+			font-size:22px;
+			color:#000000;
+		}
+		
+		.weeklyList ol li.second div.thumb {
+			background:url('../images/weekly/rank_badge_2.png') no-repeat left 10px;
+		}
+
+		.weeklyList ol li.second div.thumb img {
+			width:70px;
+			height:70px;
+			padding-left:44px;
+		}
+		
+		.weeklyList ol li.second div.artistInfo {
+			position:absolute;
+			top:37px;
+			left:158px;
+			
+		}
+
+		.weeklyList ol li.second div.artistInfo span.weekleyArtist {
+			font-weight:bold;
+			font-size:14px;
+			color:#000000;
+		}
+
+		.weeklyList ol li.second div.artistInfo span.weekleySong {
+			font-size:12px;
+			color:#666666;
+		}		
+
+		.weeklyList ol li.second div.rateBox {
+			position:absolute;
+			top:37px;
+			left:298px;
+		}
+
+		.weeklyList ol li.second div.rateBox span.rateResult {
+			display:inline-block;
+			padding-bottom:8px;
+			font-size:15px;
+			color:#999999;
+		}
+
+
+		.weeklyList ol li.second div.rateBox span.rate1 {
+			display:inline-block;
+			width:37px;
+			height:20px;
+			text-align:center;
+			font-weight:bold;
+			color:#ffffff;
+			background:#05aab0;
+		}
+
+		.weeklyList ol li.second div.rateBox span.rate2 {
+			display:inline-block;
+			width:190px;
+			height:20px;
+			text-align:center;
+			font-weight:bold;
+			color:#ffffff;
+			background:#f68f7c;
+		}
+
+		.weeklyList ol li.second div.rateBox span.totalrate {
+			display:inline-block;
+			font-size:22px;
+			font-weight:bold;
+			color:#666666;
+		}
+		
+
+		.weeklyList ol li.last div.thumb img {
+			width:70px;
+			height:70px;
+			padding-left:44px;
+		}
+		.weeklyList ol li.last div.thumb {
+			background:url('../images/weekly/rank_badge_3.png') no-repeat left 10px;
+		}
+		.weeklyList ol li.last div.artistInfo {
+			position:absolute;
+			top:37px;
+			left:158px;
+		}
+		.weeklyList ol li.last div.rateBox {
+			position:absolute;
+			top:37px;
+			left:298px;
+		}
+		
+		.weeklyList ol li.last div.artistInfo span.weekleyArtist {
+			font-weight:bold;
+			font-size:14px;
+			color:#000000;
+		}
+
+		.weeklyList ol li.last div.artistInfo span.weekleySong {
+			font-size:12px;
+			color:#666666;
+		}
+
+		.weeklyList ol li.last div.rateBox span.rateResult {
+			display:inline-block;
+			padding-bottom:8px;
+			font-size:15px;
+			color:#999999;
+		}
+
+
+		.weeklyList ol li.last div.rateBox span.rate1 {
+			display:inline-block;
+			width:20px;
+			height:20px;
+			text-align:center;
+			font-weight:bold;
+			color:#ffffff;
+			background:#05aab0;
+		}
+
+		.weeklyList ol li.last div.rateBox span.rate2 {
+			display:inline-block;
+			width:151px;
+			height:20px;
+			text-align:center;
+			font-weight:bold;
+			color:#ffffff;
+			background:#f68f7c;
+		}
+
+		.weeklyList ol li.last div.rateBox span.totalrate {
+			display:inline-block;
+			font-size:22px;
+			font-weight:bold;
+			color:#666666;
+		}
+
+		/* con area */
+
+		#conWrap {
+			position:relative;
+
+		}
+		
+		.btnList {
+			padding-top:24px;
+			padding-left:650px;
+		}
+
+		.btnList span.card a {
+			display:inline-block;
+			width:67px;
+			height:24px;
+			font-size:0;
+			padding-right:26px;
+			background:url('../images/weekly/sp_list_type.png')no-repeat;
+		}
+
+		.btnList span.card a:hover {
+			display:inline-block;
+			width:67px;
+			height:24px;
+			font-size:0;
+			background:url('../images/weekly/sp_list_type.png') 0 24px;
+		}
+		.btnList span.list a {
+			display:inline-block;
+			width:79px;
+			height:24px;
+			font-size:0;
+			background:url('../images/weekly/sp_list_type.png') 79px 0;
+		}
+
+		.btnList span.list a:hover {
+			display:inline-block;
+			width:79px;
+			height:24px;
+			font-size:0;
+			background:url('../images/weekly/sp_list_type.png') 79px 24px;
+		}
+
+		
+		/* Card con */
+		
+		#chartCard {
+			width:100%;
+			margin-top:20px;
+			background:#eeedee;
+		}
+
+		#chartCard ol li {
+			overflow:hidden;
+			float:left;
+			width:266px;
+			padding-right:20px;
+			padding-bottom:33px;
+			
+		}
+
+		#chartCard ol li.rank03 {
+			padding-right:0;
+		}
+
+		#chartCard ol li.rank06 {
+			padding-right:0;
+		}
+
+		#chartCard ol li.rank09 {
+			padding-right:0;
+		}
+
+		#chartCard ol li.rank12 {
+			padding-right:0;
+		}
+
+		#chartCard div.cardWrap {
+			background:#202122;
+		}
+
+		#chartCard ol li.rank01 div.contHead {
+			height:60px;
+			background:url('../images/weekly/bg_votetit_type0101.png') no-repeat;
+		}
+		#chartCard ol li.rank01 div.contHead span.headNum {
+			display:inline-block;
+			font-size:0;
+			width:37px;
+			height:29px;
+			margin-top:13px;
+			margin-left:15px;
+			background:url('../images/weekly/img_numlist.png') 0 0;
+			
+		}
+
+
+		#chartCard ol li.rank02 div.contHead {
+			height:60px;
+			background:url('../images/weekly/bg_votetit_type0101.png') no-repeat;
+		}
+
+		#chartCard ol li.rank02 div.contHead span.headNum {
+			display:inline-block;
+			font-size:0;
+			width:36px;
+			height:29px;
+			margin-top:13px;
+			margin-left:15px;
+			background:url('../images/weekly/img_numlist.png') 0 868px;
+			
+		}
+
+		#chartCard ol li.rank03 div.contHead {
+			height:60px;
+			background:url('../images/weekly/bg_votetit_type0101.png') no-repeat;
+		}
+		#chartCard ol li.rank03 div.contHead span.headNum {
+			display:inline-block;
+			font-size:0;
+			width:36px;
+			height:29px;
+			margin-top:13px;
+			margin-left:15px;
+			background:url('../images/weekly/img_numlist.png') 0 839px;
+			
+		}
+
+		#chartCard ol li.rank04 div.contHead {
+			height:60px;
+			background:url('../images/weekly/bg_votetit_type0102.png') no-repeat;
+		}
+		#chartCard ol li.rank04 div.contHead span.headNum {
+			display:inline-block;
+			font-size:0;
+			width:36px;
+			height:29px;
+			margin-top:13px;
+			margin-left:15px;
+			background:url('../images/weekly/img_numlist.png') 0 809px;
+			
+		}
+
+		#chartCard ol li.rank05 div.contHead {
+			height:60px;
+			background:url('../images/weekly/bg_votetit_type0102.png') no-repeat;
+		}
+		#chartCard ol li.rank05 div.contHead span.headNum {
+			display:inline-block;
+			font-size:0;
+			width:36px;
+			height:29px;
+			margin-top:13px;
+			margin-left:15px;
+			background:url('../images/weekly/img_numlist.png') 0 779px;
+			
+		}
+
+		#chartCard ol li.rank06 div.contHead {
+			height:60px;
+			background:url('../images/weekly/bg_votetit_type0102.png') no-repeat;
+		}
+
+		#chartCard ol li.rank06 div.contHead span.headNum {
+			display:inline-block;
+			font-size:0;
+			width:36px;
+			height:29px;
+			margin-top:13px;
+			margin-left:15px;
+			background:url('../images/weekly/img_numlist.png') 0 749px;
+			
+		}
+
+		#chartCard ol li.rank07 div.contHead {
+			height:60px;
+			background:url('../images/weekly/bg_votetit_type0103.png') no-repeat;
+		}
+
+		#chartCard ol li.rank07 div.contHead span.headNum {
+			display:inline-block;
+			font-size:0;
+			width:36px;
+			height:29px;
+			margin-top:13px;
+			margin-left:15px;
+			background:url('../images/weekly/img_numlist.png') 0 719px;
+			
+		}
+
+		#chartCard ol li.rank08 div.contHead {
+			height:60px;
+			background:url('../images/weekly/bg_votetit_type0103.png') no-repeat;
+		}
+
+		#chartCard ol li.rank08 div.contHead span.headNum {
+			display:inline-block;
+			font-size:0;
+			width:36px;
+			height:29px;
+			margin-top:13px;
+			margin-left:15px;
+			background:url('../images/weekly/img_numlist.png') 0 689px;
+			
+		}
+
+		#chartCard ol li.rank09 div.contHead {
+			height:60px;
+			background:url('../images/weekly/bg_votetit_type0103.png') no-repeat;
+		}
+
+		#chartCard ol li.rank09 div.contHead span.headNum {
+			display:inline-block;
+			font-size:0;
+			width:36px;
+			height:29px;
+			margin-top:13px;
+			margin-left:15px;
+			background:url('../images/weekly/img_numlist.png') 0 659px;
+			
+		}
+
+
+		#chartCard div.artistPic img {
+			width:266px;
+		}
+		#chartCard div.cont {
+			background:#ffffff;
+		}
+		#chartCard div.title {
+			position:relative;
+			width:224px;
+			margin-left:20px;
+			padding-top:30px;
+			padding-bottom:15px;
+			border-bottom:1px dotted #dddddd;
+			background:#ffffff;
+		}
+
+		#chartCard div.title span.artistName {
+			font-size:17px;
+			font-weight:bold;
+			color:#3a3a3a;
+			
+		}
+		#chartCard div.title span.songName {
+			display:inline-block;
+			width:14px;
+			height:16px;
+			padding-top:10px;
+			font-size:14px;
+			color:#666666;
+			background:url('../images/weekly/btn_play_song.png') no-repeat 0 12px;
+		}
+
+		#chartCard div.title span.songName a {
+			display:inline-block;
+			padding-left:18px;
+			
+		} 
+		#chartCard div.title span.btnFan {
+			position:absolute;
+			top:20px;
+			right:0;
+		}
+		#chartCard div.title span.btnFan a {
+			display:inline-block;
+			width:56px;
+			height:56px;
+			font-size:0;
+			background:url('../images/weekly/btn_pan.png') no-repeat 0 0;
+		}
+
+		#chartCard div.title span.btnFan a:hover {
+			display:inline-block;
+			width:56px;
+			height:56px;
+			font-size:0;
+			background:url('../images/weekly/btn_pan.png') 56px 0;
+		}
+
+		#chartCard div.voteCount {
+			background:#ffffff;
+			padding-left:20px;
+			padding-top:20px;
+		}
+		#chartCard div.voteCount span.voteRate {
+			color:#666666;
+		}
+		#chartCard div.voteCount span.voteFigure {
+			font-size:12px;
+			color:#05b8b0;
+		}
+		#chartCard div.voteCount span.songFigure {
+			font-size:12px;
+			color:#f68f7c;
+		}
+
+		#chartCard div.voteCount span.rateBar {
+			display:inline-block;
+			width:176px;
+			height:4px;
+			background:#e1e1e1;
+		}
+
+		#chartCard div.voteCount span.totalCount {
+			font-size:14px;
+			font-weight:bold;
+			color:#999999;
+		} 
+
+
+
+		#chartCard div.voteCount p {
+			display:inline-block;
+			width:224px;
+			height:38px;
+			margin-top:24px;
+			margin-bottom:20px;
+			border:1px solid #dddddd;
+			background:#ffffff;
+		}
+		#chartCard p a {
+			display:inline-block;
+			padding-top:10px;
+			padding-left:38%;
+			font-size:17px;
+			font-weight:bold;
+			text-decoration:none;
+			color:#999999;
+			
+		}
+
+
+
+
+
+		/* List con */
+
+		#chartList {
+			width:100%;
+			margin-top:20px;
+			background:#eeedee;
+		}
+		
+		#chartList ol li {
+			overflow:hidden;
+			float:left;
+			width:839px;
+			margin-bottom:10px;
+			background:#ffffff;
+		}
+		#chartList ol li div {
+			float:left;
+		}
+		
+
+		#chartList ol li div.listWrap {
+			background:#202122;
+		}
+
+		#chartList ol li.rank01 div.listWrap div.contHead {
+			width:70px;
+			height:90px;
+			background:url('../images/weekly/bg_votetit_type0201.png') no-repeat;
+		}
+		
+		#chartList ol li.rank01 div.contHead span.headNum {
+			display:inline-block;
+			font-size:0;
+			width:37px;
+			height:29px;
+			margin-top:13px;
+			margin-left:15px;
+			background:url('../images/weekly/img_numlist.png') 0 0;
+			
+		}
+		
+		#chartList ol li.rank02 div.listWrap div.contHead {
+			width:70px;
+			height:90px;
+			background:url('../images/weekly/bg_votetit_type0201.png') no-repeat;
+		}
+		#chartList ol li.rank02 div.contHead span.headNum {
+			display:inline-block;
+			font-size:0;
+			width:37px;
+			height:29px;
+			margin-top:13px;
+			margin-left:15px;
+			background:url('../images/weekly/img_numlist.png') 0 868px;
+			
+		}
+
+		#chartList ol li.rank03 div.listWrap div.contHead {
+			width:70px;
+			height:90px;
+			background:url('../images/weekly/bg_votetit_type0201.png') no-repeat;
+		}
+		#chartList ol li.rank03 div.contHead span.headNum {
+			display:inline-block;
+			font-size:0;
+			width:37px;
+			height:29px;
+			margin-top:13px;
+			margin-left:15px;
+			background:url('../images/weekly/img_numlist.png') 0 839px;
+			
+		}
+
+		#chartList ol li.rank04 div.listWrap div.contHead {
+			width:70px;
+			height:90px;
+			background:url('../images/weekly/bg_votetit_type0202.png') no-repeat;
+		}
+		#chartList ol li.rank04 div.contHead span.headNum {
+			display:inline-block;
+			font-size:0;
+			width:36px;
+			height:29px;
+			margin-top:13px;
+			margin-left:15px;
+			background:url('../images/weekly/img_numlist.png') 0 809px;
+			
+		}
+
+		#chartList ol li.rank05 div.listWrap div.contHead {
+			width:70px;
+			height:90px;
+			background:url('../images/weekly/bg_votetit_type0202.png') no-repeat;
+		}
+		#chartList ol li.rank05 div.contHead span.headNum {
+			display:inline-block;
+			font-size:0;
+			width:36px;
+			height:29px;
+			margin-top:13px;
+			margin-left:15px;
+			background:url('../images/weekly/img_numlist.png') 0 779px;
+			
+		}
+
+
+		#chartList ol li.rank06 div.listWrap div.contHead {
+			width:70px;
+			height:90px;
+			background:url('../images/weekly/bg_votetit_type0202.png') no-repeat;
+		}
+		#chartList ol li.rank06 div.contHead span.headNum {
+			display:inline-block;
+			font-size:0;
+			width:36px;
+			height:29px;
+			margin-top:13px;
+			margin-left:15px;
+			background:url('../images/weekly/img_numlist.png') 0 749px;
+			
+		}
+
+		#chartList ol li.rank07 div.listWrap div.contHead {
+			width:70px;
+			height:90px;
+			background:url('../images/weekly/bg_votetit_type0203.png') no-repeat;
+		}
+		#chartList ol li.rank07 div.contHead span.headNum {
+			display:inline-block;
+			font-size:0;
+			width:36px;
+			height:29px;
+			margin-top:13px;
+			margin-left:15px;
+			background:url('../images/weekly/img_numlist.png') 0 719px;
+			
+		}
+
+		#chartList ol li.rank08 div.listWrap div.contHead {
+			width:70px;
+			height:90px;
+			background:url('../images/weekly/bg_votetit_type0203.png') no-repeat;
+		}
+		#chartList ol li.rank08 div.contHead span.headNum {
+			display:inline-block;
+			font-size:0;
+			width:36px;
+			height:29px;
+			margin-top:13px;
+			margin-left:15px;
+			background:url('../images/weekly/img_numlist.png') 0 689px;
+			
+		}
+
+		#chartList ol li.rank09 div.listWrap div.contHead {
+			width:70px;
+			height:90px;
+			background:url('../images/weekly/bg_votetit_type0203.png') no-repeat;
+		}
+		#chartList ol li.rank09 div.contHead span.headNum {
+			display:inline-block;
+			font-size:0;
+			width:36px;
+			height:29px;
+			margin-top:13px;
+			margin-left:15px;
+			background:url('../images/weekly/img_numlist.png') 0 659px;
+			
+		}
+
+
+		#chartList ol li div.listWrap div.cont {
+			position:relative;
+			width:640px;
+			padding-left:40px;
+			background:#ffffff;
+		}
+		
+		#chartList ol li.rank01 div.listWrap div.cont div.artistPic {
+			width:112px;
+			height:112px;
+			margin-top:20px;
+			background:url('../images/weekly/724619.jpg')no-repeat center 40%;
+		}
+
+		#chartList ol li.rank02 div.listWrap div.cont div.artistPic {
+			width:112px;
+			height:112px;
+			margin-top:20px;
+			background:url('../images/weekly/402526.jpg')no-repeat center 40%;
+		}
+
+		#chartList ol li.rank03 div.listWrap div.cont div.artistPic {
+			width:112px;
+			height:112px;
+			margin-top:20px;
+			background:url('../images/weekly/630454.jpg')no-repeat center 40%;
+		}
+
+		#chartList ol li.rank04 div.listWrap div.cont div.artistPic {
+			width:112px;
+			height:112px;
+			margin-top:20px;
+			background:url('../images/weekly/858846.jpg')no-repeat center 40%;
+		}
+
+		#chartList ol li.rank05 div.listWrap div.cont div.artistPic {
+			width:112px;
+			height:112px;
+			margin-top:20px;
+			background:url('../images/weekly/1130.jpg')no-repeat center 50%;
+		}
+
+		#chartList ol li.rank06 div.listWrap div.cont div.artistPic {
+			width:112px;
+			height:112px;
+			margin-top:20px;
+			background:url('../images/weekly/481481.jpg')no-repeat center 30%;
+		}
+
+		#chartList ol li.rank07 div.listWrap div.cont div.artistPic {
+			width:112px;
+			height:112px;
+			margin-top:20px;
+			background:url('../images/weekly/198094.jpg')no-repeat center 50%;
+		}
+
+		#chartList ol li.rank08 div.listWrap div.cont div.artistPic {
+			width:112px;
+			height:112px;
+			margin-top:20px;
+			background:url('../images/weekly/175139.jpg')no-repeat center 40%;
+		}
+
+		#chartList ol li.rank09 div.listWrap div.cont div.artistPic {
+			width:112px;
+			height:112px;
+			margin-top:20px;
+			background:url('../images/weekly/569233.jpg')no-repeat center 10%;
+		}
+
+
+		#chartList ol li div.listWrap div.title {
+			position:relative;
+			width:247px;
+			height:130px;
+			margin:10px 30px 10px 18px;
+			border-right:1px dotted #dddddd;
+		}
+		
+
+		#chartList div.title span.artistName {
+			display:inline-block;
+			padding-top:37px;
+			font-size:17px;
+			font-weight:bold;
+			color:#3a3a3a;
+			
+		}
+		#chartList div.title span.songName {
+			display:inline-block;
+			width:14px;
+			height:16px;
+			padding-top:10px;
+			font-size:14px;
+			color:#666666;
+			background:url('../images/weekly/btn_play_song.png') no-repeat 0 12px;
+		}
+
+		#chartList div.title span.songName a {
+			display:inline-block;
+			padding-left:18px;
+			
+		} 
+		#chartList div.title span.btnFan {
+			position:absolute;
+			top:30px;
+			right:30px;
+		}
+		#chartList div.title span.btnFan a {
+			display:inline-block;
+			width:56px;
+			height:56px;
+			font-size:0;
+			background:url('../images/weekly/btn_pan.png') no-repeat 0 0;
+		}
+
+		#chartList div.title span.btnFan a:hover {
+			display:inline-block;
+			width:56px;
+			height:56px;
+			font-size:0;
+			background:url('../images/weekly/btn_pan.png') 56px 0;
+		}
+
+		#chartList div.voteCount {
+			position:absolute;
+			top:30px;
+			right:0;
+			padding-left:20px;
+	
+		}
+		#chartList div.voteCount span.voteRate {
+			color:#666666;
+		}
+		#chartList div.voteCount span.voteFigure {
+			font-size:12px;
+			color:#05b8b0;
+		}
+		#chartList div.voteCount span.songFigure {
+			font-size:12px;
+			color:#f68f7c;
+		}
+
+		#chartList div.voteCount span.rateBar {
+			display:inline-block;
+			width:176px;
+			height:4px;
+			background:#e1e1e1;
+		}
+
+		#chartList div.voteCount span.totalCount {
+			font-size:14px;
+			font-weight:bold;
+			color:#999999;
+		} 
+
+		#chartList div.voteCount p {
+			display:inline-block;
+			width:224px;
+			height:38px;
+			margin-top:20px;
+			margin-bottom:20px;
+			border:1px solid #dddddd;
+			background:#ffffff;
+		}
+		#chartList p a {
+			display:inline-block;
+			padding-top:10px;
+			padding-left:38%;
+			font-size:17px;
+			font-weight:bold;
+			text-decoration:none;
+			color:#999999;
+			
+		}
+
+
+		/* btn All */
+
+		.btnChartall a {
+			display:inline-block;
+			width:839px;
+			height:50px;
+			margin-top:10px;
+			font-size:0;
+			border:1px solid #cccccc;
+			background:url('../images/weekly/btn_allview_150209.png') no-repeat;
+		}
+
+		.btnChartall a:hover {
+			background:url('../images/weekly/btn_allview_150209.png') 0 153px;
+		}
+
+		.btnFolding a {
+			display:inline-block;
+			width:839px;
+			height:50px;
+			margin-top:10px;
+			font-size:0;
+			border:1px solid #cccccc;
+			background:url('../images/weekly/btn_allview_150209.png') 0 102px;
+		}
+
+		.btnFolding a:hover {
+			background:url('../images/weekly/btn_allview_150209.png') 0 51px;
+		}
+		
+		p.btnTop {
+			position:fixed;
+			bottom:15%;
+			left:85%;
+			z-index:100;
+			font-size:0;	
+		}
+
+		p.btnTop a {
+			display:inline-block;
+			width:42px;
+			height:42px;
+			background: url('../images/weekly/btn_top.png') 0 0 no-repeat;
+		}
+
+		/* footer */
+		.footerBg {
+			clear:both;
+			width:100%;
+			height:100%;
+			margin-top:34px;
+			background:#2c2c2c;
+		}
+			#footer {
+				width:1024px;
+				margin:0 auto;
+			}
+			#footer ul li {
+				float:left;
+				padding-top:25px;
+				padding-left:9px;
+				padding-right:9px;
+				font-size:12px;
+				font-weight:bold;
+				color:#ffffff;
+				background:url('../images/weekly/l_line.png')no-repeat right 85%;
+			}
+
+			#footer p {
+				padding-top:56px;
+			}
+			#footer p span {
+				float:left;
+				padding-left:9px;
+				padding-right:9px;
+				font-size:11px;
+				color:#6a6a6a;
+				background:url('../images/weekly/l_line.png')no-repeat right 60%;
+			}
+			#footer p span.none {
+				padding-right:0;
+				background:none;
+			}
+
+			#footer p.copy {
+				padding-top:0;
+				padding-bottom:40px;
+			}
+
+		

@@ -1,0 +1,1309 @@
+@charset "utf-8";
+
+#wrap {
+	position:relative;
+}
+
+	/* container */
+
+	#container {
+		width:1009px;
+		margin:0 auto;
+	
+	}
+
+		/* conTop */
+
+			
+		div#conTop {
+			margin-top:31px;
+		}
+
+			div#newAlbum {
+				position:relative;
+				overflow:hidden;
+				float:left;
+				width:478px;
+				height:340px;
+			}
+			div#newAlbum h2 {
+				width:478px;
+				height:15px;
+				padding-bottom:10px;
+				color:#888888;
+				background:url('../images/index/bg_main_title_140716.png') no-repeat left -16px;
+				
+			}
+			div#newAlbum h2 a {
+				font-size:0;
+			}
+
+			div#newAlbum div.conList {
+				position:absolute;
+				top:0;
+				right:0;
+			}
+
+			div#newAlbum p.conListnum {
+				float:left;
+				font-weight:bold;
+				font-family:Malgun Gothic;
+				color:#888888;
+			}
+
+			div#newAlbum p.conListnum span.conListpresent {
+				color:#3b9c00;
+			}
+			div#newAlbum ul.categoryList {
+				width:278px;
+			}
+
+			div#newAlbum ul.categoryList li {
+				float:left;
+				padding-left:7px;
+				padding-right:7px;
+				background:url('../images/common/bg_gray_line.png') no-repeat left;
+				
+			}
+
+			div#newAlbum ul.categoryList li a {
+				text-decoration:none;
+			}
+
+
+			div#newAlbum ul li.conList1 {
+				background:none;
+			}
+			
+
+				div.newAlbumcon {
+					width:2390px;
+				}
+				div.newAlbumcon ul {
+					/*
+					position:absolute;
+					top:24px;
+					left:0;
+					*/
+					float:left;
+					width:478px;
+					height:315px;
+				}
+
+				div.newAlbumcon ul li {
+					float:left;
+					padding-right:4px;
+					padding-bottom:5px;
+				}
+
+				div.newAlbumcon ul li.albumListLast {
+					float:left;
+					padding-right:0;
+				}
+
+				div.newAlbumcon ul li img {
+					border:1px solid #e6e6e6;
+					width:153px;
+				}
+				
+			/* bannerBtn */
+
+			#container div.bannerBtn {
+				position:absolute;
+				top:0;
+				right:4px;
+
+			}
+			#container div.bannerBtn a {
+				display:block;
+				font-size:0;
+				width:19px;
+				height:18px;
+				float:left;
+			}
+
+				div.bannerBtn a.bannerBtn1 {
+					background:url('../images/common/bg_btn_page02.png') 0px 180px
+				}
+				div.bannerBtn a.bannerBtn1:hover {
+					background:url('../images/common/bg_btn_page02.png') 0px 144px
+				}
+
+				div.bannerBtn a.bannerBtn2 {
+					background:url('../images/common/bg_btn_page02.png') 19px 180px
+				}
+				div.bannerBtn a.bannerBtn2:hover {
+					background:url('../images/common/bg_btn_page02.png') 19px 144px
+				}
+
+			
+		/* event */
+
+
+			div#event {
+				position:relative;
+				overflow:hidden;
+				float:left;
+				width:236px;
+				height:340px;
+			}
+				div#event ul {
+					padding-top:24px;
+					width:1652px;
+				}
+				div#event ul li {
+					float:left
+				}
+				div#event div.rollingBtn {
+					position:absolute;
+					top:-4px;
+					right:3px;
+				}
+				div#event div.rollingBtn span {
+					display:inline-block;
+					float:left;
+					width:10px;
+					height:10px;
+					padding-right:3px;
+					
+				}
+
+				div#event div.rollingBtn span a {
+					display:inline-block;
+					font-size:0;
+					width:15px;
+					height:15px;
+					background:url('../images/index/bg_btn_page02_140716.png') 37px 213px;
+				}
+
+				div#event div.rollingBtn span a:hover {
+					display:inline-block;
+					font-size:0;
+					width:15px;
+					height:15px;
+					background:url('../images/index/bg_btn_page02_140716.png') -1px 213px;
+				}
+
+				div#event div.rollingBtn span a.stopBtn {
+					display:inline-block;
+					font-size:0;
+					width:15px;
+					height:15px;
+					margin-bottom:10px;
+					background:url('../images/index/bg_btn_page02_140716.png') 0px 229px;
+				}
+
+				div#event div.rollingBtn span a.stopBtn:hover {
+					display:inline-block;
+					font-size:0;
+					width:15px;
+					height:15px;
+					margin-bottom:10px;
+					background:url('../images/index/bg_btn_page02_140716.png') 16px 229px;
+				}
+
+
+			/* logIn */
+
+			div#loginBox {
+				width:280px;
+				margin-left:8px;
+				float:left;
+			}
+
+				div.logIn {
+					position:relative;
+					width:280px;
+					height:117px;
+					margin-top:23px;
+					border:1px solid #dfe6e8;
+					background-color:#f9f9f9;
+				}
+
+
+				div.logIn input#userId, input#userPwd {
+					width:171px;
+					height:26px;
+					margin-left:16px;
+					border:1px solid #cccccc;
+				}
+
+				div.logIn input#userId {
+					margin-top:19px;
+					margin-bottom:6px;
+					
+				}
+
+				div.logIn input.loginIcon {
+					position:absolute;
+					top:20px;
+					right:16px;
+					width:70px;
+					height:64px;
+					border:none;
+					background:url('../images/index/icon_main.png') 0 456px;
+				}
+
+				div.logIn div.loginBottom {
+					font-family:Malgun Gothic;
+					font-size:11px;
+					margin-left:13px;
+					margin-top:10px;
+				}
+
+				div.logIn div.loginBottom input.idSave {
+					padding-right:7px;
+					padding-left:6px;
+					background:url('../images/common/bg_gray_line.png') no-repeat left;
+				}
+
+				div.logIn div.loginBottom span {
+					padding-right:2px;
+					padding-left:6px;
+					background:url('../images/common/bg_gray_line.png') no-repeat left;
+				}
+
+				div.logIn div.loginBottom span a {
+					text-decoration:none;
+				}
+
+				div.promotion {
+					margin-top:7px;
+					
+				}
+				div.promotion img {
+					border:1px solid #dfe6e8;
+				}
+
+
+		/* conMiddle */
+
+			div#conMiddle {
+				background-color:pink;
+			}
+
+			/* hotCon */
+
+				div#hotCon {
+					position:relative;
+					overflow:hidden;
+					float:left;
+					width:704px;
+					height:469px;
+					padding-top:33px;
+				}
+				div#hotCon h2 {
+					width:704px;
+					height:15px;
+					color:#888888;
+					padding-bottom:10px;
+					border-bottom:1px solid #dfe6e8;
+				}
+
+				div#hotCon h2 span.h2Theme {
+					display:inline-block;
+					width:70px;
+					height:15px;
+					padding-top:10px;
+					font-size:0;
+					background-color:pink;
+					background:url('../images/index/bg_main_title_140716.png') 0 36px;
+				}
+
+				div#hotCon h2 span.h2Text {
+					font-weight:normal;
+				}
+				div#hotCon h2 span.listNum {
+					padding-left:157px;
+					font-family:Malgun Gothic;
+				}
+
+				div#hotCon h2 span.hotListpresent {
+					color:#3b9c00;
+				}
+
+				
+				div#hotCon ul {
+					width:704px;
+					height:428px;
+					font-size:11px;
+					padding-top:16px;
+				}
+				div#hotCon ul li {
+					float:left;
+					padding-right:12px;
+					padding-bottom:19px;
+				}
+
+				div#hotCon ul li dl dt img {
+					width:220px;
+					height:146px;
+					border:1px solid #dfe6e8;
+				}
+
+				div#hotCon ul li dl dd strong {
+					color:#333333;
+				}
+
+				div#hotCon ul li dl dd span.muWrite {
+					padding-right:10px;
+					background:url('../images/common/bg_gray_line.png') no-repeat right;
+				}
+				div#hotCon ul li dl dd span.muWrite a {
+					color:#7cb710;
+				}
+				div#hotCon ul li dl dd span.contNum {
+					padding-left:10px;
+				}
+
+				
+
+				/* bannerBtn */
+
+			div#hotCon div.bannerBtn {
+				position:absolute;
+				top:35px;
+				right:0;
+
+			}
+			div#hotCon div.bannerBtn a {
+				display:block;
+				font-size:0;
+				width:19px;
+				height:18px;
+				float:left;
+			}
+
+				div#hotCon div.bannerBtn a.bannerBtn1 {
+					background:url('../images/common/bg_btn_page02.png') 0px 180px
+				}
+				div#hotCon div.bannerBtn a.bannerBtn1:hover {
+					background:url('../images/common/bg_btn_page02.png') 0px 144px
+				}
+
+				div#hotCon div.bannerBtn a.bannerBtn2 {
+					background:url('../images/common/bg_btn_page02.png') 19px 180px
+				}
+				div#hotCon div.bannerBtn a.bannerBtn2:hover {
+					background:url('../images/common/bg_btn_page02.png') 19px 144px
+				}
+
+			/* chartTab */
+
+			div#chartTab {
+				float:left;
+				width:280px;
+				padding-top:33px;
+				margin-left:17px;
+				
+			}
+
+				div#chartTab h2 span {
+					display:inline-block;
+					width:70px;
+					height:15px;
+					font-size:0;
+					padding-bottom:10px;
+					background:url('../images/index/bg_main_title_140716.png') 0 125px;
+				}
+
+				
+				#chartTab .chartWrap{
+					position:relative; 
+					width:100%; 
+					height:443px;
+					border:1px solid #d8ddde;
+				}
+
+				#chartTab .chartWrap h3 { 
+					float:left; 
+					border-bottom:1px solid #ddd  
+				}
+				#chartTab .chartWrap h3.tab2 { 
+					border-left:1px solid #ddd; 
+					border-right:1px solid #ddd 
+				}
+				#chartTab .chartWrap h3 a { 
+					display:block; 
+					width:92px; 
+					height:28px;  
+					text-align:center 
+				}
+				#chartTab .chartWrap h3 a span { 
+					display:inline-block; 
+					width:34px; 
+					height:12px; 
+					margin-top:7px; 
+					font-size:0; 
+					background:url("../images/index/icon_main.png") no-repeat ;
+				}
+				#chartTab .chartWrap h3.tab1 span { 
+					background-position:-20px -132px 
+				}
+				#chartTab .chartWrap h3.tab2 span { 
+					background-position:-71px -132px 
+				}
+				#chartTab .chartWrap h3.tab3 span { 
+					background-position:-127px -132px; 
+					width:61px 
+				}
+
+				#chartTab .chartWrap p.date { 
+					position:absolute; 
+					top:0; 
+					right:0; 
+					margin-top:-30px; 
+					display:none 
+				}
+
+				#chartTab .chartWrap p.first { display:block }
+
+				#chartTab .chartWrap p.btnBottom {
+					position:absolute; 
+					bottom:-45px; 
+					left:0; 
+				}
+
+				/* script */
+
+				#chartTab .chartWrap h3 a.on { 
+					height:26px; 
+					border-top:2px solid #89c120 
+				}
+				#chartTab .chartWrap h3.tab1 span.active { background-position:-20px -150px }
+				#chartTab .chartWrap h3.tab2 span.active { background-position:-71px -150px }
+				#chartTab .chartWrap h3.tab3 span.active { background-position:-127px -150px }
+
+				#chartTab .list { position:absolute; top:30px; left:0; width:100%; background-color:#ffffff; }
+				#chartTab .list ol li { position:relative; overflow:hidden; height:30px; padding-left:71px; border-bottom:1px solid #ddd }
+				
+				#chartTab .list dt { float:left; overflow:hidden; width:116px; padding-top:5px; margin-right:17px }
+				#chartTab .list dt a { color:#000 }
+				#chartTab .list dd { float:left;  padding-top:5px }
+				#chartTab .list dd a { color:#797979 }
+				#chartTab .list dd img { width:0; height:0 }
+				#chartTab .list ol li div {
+						position:absolute;
+						top:3px;
+						left:5px;
+				}
+				#chartTab .list ol li span.rankNum1 {
+						display:inline-block;
+						width:16px;
+						height:12px;
+						padding-right:10px;
+						font-size:0;
+						background:url('../images/index/icon_main.png') no-repeat -7px -447px;
+					}
+
+				#chartTab .list ol li span.rankNum2 {
+						display:inline-block;
+						width:16px;
+						height:12px;
+						padding-right:10px;
+						font-size:0;
+						background:url('../images/index/icon_main.png') no-repeat -7px -478px;
+					}	
+
+				#chartTab .list ol li span.rankNum3 {
+						display:inline-block;
+						width:16px;
+						height:12px;
+						padding-right:10px;
+						font-size:0;
+						background:url('../images/index/icon_main.png') no-repeat -7px -509px;
+					}	
+
+				#chartTab .list ol li span.rankNum4 {
+						display:inline-block;
+						width:16px;
+						height:12px;
+						padding-right:10px;
+						font-size:0;
+						background:url('../images/index/icon_main.png') no-repeat -7px -540px;
+					}	
+
+				#chartTab .list ol li span.rankNum5 {
+						display:inline-block;
+						width:16px;
+						height:12px;
+						padding-right:10px;
+						font-size:0;
+						background:url('../images/index/icon_main.png') no-repeat -7px -571px;
+					}	
+
+				#chartTab .list ol li span.rankNum6 {
+						display:inline-block;
+						width:16px;
+						height:12px;
+						padding-right:10px;
+						font-size:0;
+						background:url('../images/index/icon_main.png') no-repeat -7px -602px;
+					}	
+
+				#chartTab .list ol li span.rankNum7 {
+						display:inline-block;
+						width:16px;
+						height:12px;
+						padding-right:10px;
+						font-size:0;
+						background:url('../images/index/icon_main.png') no-repeat -7px -633px;
+					}	
+
+				#chartTab .list ol li span.rankNum8 {
+						display:inline-block;
+						width:16px;
+						height:12px;
+						padding-right:10px;
+						font-size:0;
+						background:url('../images/index/icon_main.png') no-repeat -7px -664px;
+					}	
+				#chartTab .list ol li span.rankNum9 {
+						display:inline-block;
+						width:16px;
+						height:12px;
+						padding-right:10px;
+						font-size:0;
+						background:url('../images/index/icon_main.png') no-repeat -7px -695px;
+					}	
+				#chartTab .list ol li span.rankNum10 {
+						display:inline-block;
+						width:16px;
+						height:12px;
+						padding-right:10px;
+						font-size:0;
+						background:url('../images/index/icon_main.png') no-repeat -7px -726px;
+					}	
+
+				#chartTab .list ol li span.rankNone {
+						display:inline-block;
+						width:7px;
+						height:12px;
+						font-size:0;
+						background:url('../images/common/bg_sprite_realtime_search.png') no-repeat -12px -153px;
+
+					}
+
+				#chartTab .list ol li span.rankUp {
+						display:inline-block;
+						width:7px;
+						height:12px;
+						font-size:0;
+						background:url('../images/common/bg_sprite_realtime_search.png') no-repeat 0px -153px;
+
+					}
+
+				#chartTab .list ol li span.rankDown {
+						display:inline-block;
+						width:7px;
+						height:12px;
+						font-size:0;
+						background:url('../images/common/bg_sprite_realtime_search.png') no-repeat -22px -153px;
+
+					}
+
+				#chartTab .list ol li span.chartNum {
+						padding-right:17px;
+						font-size:8px;
+						color:#66666a;
+					}
+				#chartTab .list .recom {
+					position:relative;
+					width:100%;
+					height:22px;
+					padding-top:5px;
+					padding-left: 5px;
+					padding-bottom: 5px;
+					border-bottom:1px solid #d8ddde;
+				}
+				#chartTab .list .recom span {
+						display:inline-block;
+						width:62px;
+						height:22px;
+						
+						font-size:0;
+						background:url('../images/index/icon_main.png') 300px 631px;
+					}
+
+				#chartTab .list .recom dl { position:absolute; top:3px; left:70px;}
+
+				#chartTab .list .recom dt { float:left; overflow:hidden; width:110px; padding-top:5px;}
+
+				
+
+				#chartTab .list li.over { height:61px } 
+				#chartTab .list li.over dt { padding-top:0; float:right; width:149px; margin:10px 0 5px 0 }
+				#chartTab .list li.over dd { padding-top:0;}
+				#chartTab .list li.over dd img { width:48px; height:48px; float:left; margin-top:6px; margin-right:10px }
+
+				/*
+
+				#chartTab .list ol li .rank span.rankNum1 {
+					display:inline-block;
+					width:16px;
+					height:20px;
+					padding-left:10px;
+					padding-right:10px;
+					font-size:0;
+					background:url('../images/index/icon_main.png') no-repeat -56px -439px;
+				}
+
+				#chartTab .list ol li .rank span.rankNum2 {
+					display:inline-block;
+					width:16px;
+					height:20px;
+					padding-left:10px;
+					padding-right:10px;
+					font-size:0;
+					background:url('../images/index/icon_main.png') no-repeat -56px -473px;
+				}
+
+				*/
+
+
+
+
+
+
+
+				
+
+				
+				/*
+					div#chartTab ul {
+						position: relative;
+						overflow:hidden;
+						width:280px;
+						height:410px;
+
+					}
+					div#chartTab ul li {
+						float:left;
+						
+					}
+					div#chartTab ul li span.realTime {
+						display:inline-block;
+						position:absolute;
+						top:0;
+						left:0;
+						width:94px;
+						height:23px;
+						text-align:center;
+						padding-top:7px;
+						border-top: 2px solid #8ac121;
+						border-right: 1px solid #d8ddde;
+						border-bottom: 1px solid #d8ddde;
+					}
+
+					div#chartTab ul li span.realTime a {
+						text-decoration:none;
+						font-weight: bold;
+					}
+
+					div#chartTab ul li span.realTime a:hover,a:active {
+						color:#8ac121;
+						font-weight: bold;
+					}
+
+					div#chartTab ul li span.popChart {
+						display:inline-block;
+						position:absolute;
+						top:0;
+						left:94px;
+						width:93px;
+						height:23px;
+						text-align:center;
+						padding-top:7px;
+						border-top: 2px solid #8ac121;
+						border-right: 1px solid #d8ddde;
+						border-bottom: 1px solid #d8ddde;
+					}
+
+					div#chartTab ul li span.popChart a {
+						text-decoration:none;
+						font-weight: bold;
+					}
+
+					div#chartTab ul li span.popChart a:hover,a:active {
+						color:#8ac121;
+						font-weight: bold;
+					}
+					/*
+					div#chartTab ul li span.artistChart {
+						display:inline-block;
+						position: absolute;
+						top:0;
+						right:0;
+						width:93px;
+						height:23px;
+						text-align:center;
+						padding-top:7px;
+						border-top: 2px solid #8ac121;
+						border-bottom: 1px solid #d8ddde;
+					}
+					
+
+					div#chartTab ul li span.artistChart {
+						display:inline-block;
+						position: absolute;
+						top:0;
+						right:0;
+						width:93px;
+						height:24px;
+						text-align:center;
+						padding-top:7px;
+						border-top: 1px solid #d8ddde;
+						border-bottom: 1px solid #d8ddde;
+					}
+
+					div#chartTab ul li span.artistChart a {
+						text-decoration:none;
+						font-weight: bold;
+					}
+
+					div#chartTab ul li span.artistChart a:hover,a:active {
+						color:#8ac121;
+						font-weight: bold;
+					}
+					
+
+					.tabActive {
+						height:23px;
+						border-top: 2px solid #8ac121;
+					}
+
+
+					div#chartTab ul li ol{
+						position:absolute;
+						top:30px;
+						left:0;	
+					}
+
+					div#chartTab ul li ol li {
+						width:280px;
+						height:22px;
+						padding-left:15px;
+						padding-top:8px;
+						border-bottom:1px solid #d8ddde;
+						
+					}
+
+					div#chartTab ul li ol li a {
+						text-decoration:none;
+					}
+					/*
+					div#chartTab ul li ol li a.rank1 {
+						display:inline-block;
+						width:278px;
+						height:52px;
+						background:url('../images/index/2316478_ths.jpg') no-repeat 70px;
+					}
+				
+					div#chartTab ul li ol li.mouseEnter {
+						width:280px;
+						height:61px;
+						padding-left:10px;
+						padding-top:6px;
+					}
+
+					div#chartTab ul li ol li.mouseEnter span.rankNum1 {
+						display:inline-block;
+						width:23px;
+						height:40px;
+						padding-right:7px;
+						font-size:0;
+						background:url('../images/index/icon_main.png') 244px 368px;
+					}
+					
+					div#chartTab ul li ol li.mouseEnter span.rankUp {
+						margin-top:25px;
+					}
+
+					div#chartTab ul li ol li.mouseEnter span.chartNum {
+						margin-top:25px;
+					}
+					
+					/ 임의로 작성한 코드 /
+					
+					div#chartTab ul li ol li span.rankNum1 {
+						display:inline-block;
+						width:16px;
+						height:12px;
+						padding-right:10px;
+						font-size:0;
+						background:url('../images/index/icon_main.png') 290px 353px;
+					}
+			
+					div#chartTab ul li ol li span.rankNum2 {
+						display:inline-block;
+						width:16px;
+						height:12px;
+						padding-right:10px;
+						font-size:0;
+						background:url('../images/index/icon_main.png') 290px 322px;
+					}
+
+					div#chartTab ul li ol li span.rankNum3 {
+						display:inline-block;
+						width:16px;
+						height:12px;
+						padding-right:10px;
+						font-size:0;
+						background:url('../images/index/icon_main.png') 290px 291px;
+					}
+
+					div#chartTab ul li ol li span.rankNum4 {
+						display:inline-block;
+						width:16px;
+						height:12px;
+						padding-right:10px;
+						font-size:0;
+						background:url('../images/index/icon_main.png') 290px 260px;
+					}
+
+					div#chartTab ul li ol li span.rankNum5 {
+						display:inline-block;
+						width:16px;
+						height:12px;
+						padding-right:10px;
+						font-size:0;
+						background:url('../images/index/icon_main.png') 290px 229px;
+					}
+
+					div#chartTab ul li ol li span.rankNum6 {
+						display:inline-block;
+						width:16px;
+						height:12px;
+						padding-right:10px;
+						font-size:0;
+						background:url('../images/index/icon_main.png') 290px 198px;
+					}
+
+					div#chartTab ul li ol li span.rankNum7 {
+						display:inline-block;
+						width:16px;
+						height:12px;
+						padding-right:10px;
+						font-size:0;
+						background:url('../images/index/icon_main.png') 290px 167px;
+					}
+
+					div#chartTab ul li ol li span.rankNum8 {
+						display:inline-block;
+						width:16px;
+						height:12px;
+						padding-right:10px;
+						font-size:0;
+						background:url('../images/index/icon_main.png') 290px 136px;
+					}
+
+					div#chartTab ul li ol li span.rankNum9 {
+						display:inline-block;
+						width:16px;
+						height:12px;
+						padding-right:10px;
+						font-size:0;
+						background:url('../images/index/icon_main.png') 290px 105px;
+					}
+
+					div#chartTab ul li ol li span.rankNum10 {
+						display:inline-block;
+						width:16px;
+						height:12px;
+						padding-right:10px;
+						font-size:0;
+						background:url('../images/index/icon_main.png') 294px 74px;
+					}
+
+
+					div#chartTab ul li ol li span.rankNone {
+						display:inline-block;
+						width:7px;
+						height:7px;
+						font-size:0;
+						background:url('../images/common/bg_sprite_realtime_search.png') 198px 309px;
+
+					}
+
+					div#chartTab ul li ol li span.rankUp {
+						display:inline-block;
+						width:7px;
+						height:7px;
+						font-size:0;
+						background:url('../images/common/bg_sprite_realtime_search.png') 208px 309px;
+
+					}
+
+					div#chartTab ul li ol li span.rankDown {
+						display:inline-block;
+						width:7px;
+						height:7px;
+						font-size:0;
+						background:url('../images/common/bg_sprite_realtime_search.png') 186px 309px;
+
+					}
+
+					div#chartTab ul li ol li span.chartNum {
+						padding-right:17px;
+						font-size:7px;
+						color:#66666a;
+					}
+
+					div#chartTab ul li ol li span.songName {
+						display:inline-block;
+						width:130px;
+						height:11px;
+						color:#000000;
+					}
+
+					div#chartTab ul li ol li span.artistName {
+						width:75px;
+						color:#777777;
+					}
+
+					
+					div#chartTab ul li ol li span.promo {
+						display:inline-block;
+						width:62px;
+						height:22px;
+						font-size:0;
+						padding-top:0;
+						background:url('../images/index/icon_main.png') 300px 631px;
+					}
+
+					*/
+
+					div#chartTab div.chartWrap p.btnBottom {
+						padding-left:14px;
+						padding-top:5px;
+						height:38px;
+					}
+					div#chartTab p span.allListen {
+						display:inline-block;
+						width:67px;
+						height:26px;
+						margin-right:5px;
+						background:url('../images/index/bg_btn_base.png') 0px 1502px;
+					}
+					div#chartTab p span.allListen a {
+						display:inline-block;
+						width:48px;
+						height:26px;
+						padding-top:4px;
+						margin-left:19px;
+						text-decoration:none;
+						font-size:11px;
+						background:url('../images/index/bg_btn_base.png') 48px 0px;
+						
+					}
+
+					div#chartTab p span.topListen {
+						display:inline-block;
+						width:70px;
+						height:26px;
+						margin-right:5px;
+						background:url('../images/index/bg_btn_base.png') 0px 1502px;
+					}
+					
+					div#chartTab p span.topListen a {
+						display:inline-block;
+						width:65px;
+						height:26px;
+						padding-top:4px;
+						margin-left:7px;
+						text-decoration:none;
+						font-size:11px;
+						background:url('../images/index/bg_btn_base.png') 65px 0px;
+						
+					}
+
+					div#chartTab p span.chartMore {
+						display:inline-block;
+						width:100px;
+						height:26px;
+						text-align:right;
+						background:url('../images/index/bul_main_arrow.png') no-repeat right 5px;
+					}
+
+					div#chartTab p span.chartMore a {
+						padding-right:10px;
+					}
+
+				
+
+				/* conBottom */
+
+				div#conBottom {
+					position:relative;
+					overflow:hidden;
+					float:left;
+					width:100%;
+					height:480px;
+					margin-top:33px;
+					margin-bottom:42px;
+				}
+
+					div#newCon {
+						position:relative;	
+						width:704px;
+					}
+					div#newCon h2 {
+						padding-bottom:9px;
+					}
+					div#newCon h2 span.h2Textnormal {
+						padding-top:10px;
+						font-weight:normal;
+					}
+
+					div#newCon h2 span.h2Text {
+						display:inline-block;
+						width:95px;
+						height:15px;
+						padding-top:10px;
+						font-size:0;
+						background:url('../images/index/bg_main_title_140716.png') 0 105px;
+					}
+
+					div#newCon h2 span.contNumcout {
+						padding-top:10px;
+						padding-left:10px;
+						font-weight:bold;
+					}
+					
+					div#newCon p {
+						position:absolute;
+						top:0;
+						right:0;
+					}
+					div#newCon p span.recentList {
+						padding-right:9px;
+						background:url('../images/common/bg_gray_line.png') no-repeat right;
+					}
+					div#newCon p span.hotList {
+						padding-left:9px;
+					}
+
+					div#newCon p span a {
+						text-decoration:none;
+						color:#666666;
+					}
+
+					div#newCon p span a:hover {
+						color:#1a1a1a;
+					}
+
+					div#newCon p span a:active {
+						font-weight:bold;
+					}
+					
+					div#newCon div.listWrap {
+						width:704px;
+						border-top:1px solid #dfe6e8;
+					}
+					div#newCon div.listWrap ul {
+						width:704px;
+					}
+					div#newCon ul li {
+						float:left;
+						padding-top:16px;
+						padding-right:18px;
+					}
+
+					div#newCon ul li.paddingNone {
+						padding-right:0px;
+					}
+
+					div#newCon ul li dl {
+						position:relative;
+					}
+
+					
+
+					div#newCon ul li dl dd img {
+						position:absolute;
+						top:0;
+						left:0;
+						width:96px;
+						height:96px;
+					}
+
+					div#newCon ul li dl dt {
+						width:230px;
+						margin-left:112px;
+						height:95px;
+						border-bottom:1px dashed #dfe6e8;
+					}
+
+					div#newCon ul li dl dt span.uploadTime {
+						display:inline-block;
+						width:197px;
+						height:16px;
+						text-align:right;
+						color:#777777;
+					}
+
+					div#newCon ul li dl dt span.uploadTimeAr {
+						display:inline-block;
+						width:167px;
+						height:16px;
+						text-align:right;
+						color:#777777;
+					}
+
+					div#newCon ul li dl dt span.videoIcon {
+						display:inline-block;
+						width:33px;
+						height:16px;
+						background:url('../images/index/icon_main.png') 33px 631px;
+					}
+
+					div#newCon ul li dl dt span.photoIcon {
+						display:inline-block;
+						width:33px;
+						height:16px;
+						background:url('../images/index/icon_main.png') 33px 591px;
+					}
+
+					div#newCon ul li dl dt span.artistIcon {
+						display:inline-block;
+						width:63px;
+						height:16px;
+						background:url('../images/index/icon_main.png') 63px 491px;
+					}
+
+					div#newCon ul li dl dt span.playliName {
+						display:inline-block;
+						letter-spacing:-1px;
+						height:34px;
+					}
+
+					div#newCon ul li dl dt span.playliName a {
+						font-weight:bold;
+						color:#666666;
+					}
+
+					div#newCon ul li dl dt span.newartistname {
+						display:inline-block;
+						width:230px;
+						height:32px;
+						padding-top:12px;
+					}
+
+
+				/* banner */
+
+				div#banner {
+					position:absolute;
+					top:0;
+					right:6px;
+					width:280px;
+					margin-left:17px;
+				}
+
+					h2 span.h2Theme {
+						display:inline-block;
+						width:70px;
+						height:15px;
+						padding-top:10px;
+						font-size:0;
+						background:url('../images/index/bg_main_title_140716.png') 0 65px;
+					}
+
+					h2 span.listNum {
+						display:inline-block;
+						width:160px;
+						height:9px;
+						text-align:right;
+						font-family:Malgun Gothic;
+					}
+
+					h2 span span.hotListpresent {
+						color:#3b9c00;
+					}
+
+					div.bannerCon {
+						border:1px solid #dfe6e8;
+						
+					}
+
+					div.bannerCon dl {
+						position:relative;
+						padding-bottom:8px;
+					}
+
+
+					div.bannerCon dt.bannerHead1 {
+						width:280px;
+						font-size:17px;
+						font-weight:bold;
+						text-align:center;
+						padding-top:15px;
+						padding-bottom:10px;
+						color:#000000;
+					}
+
+					div.bannerCon dd.bannerList1 {
+						width:280px;
+						text-align:center;
+						padding-bottom:15px;
+						color:#777777;
+					}
+					div.bannerCon dd.bannerPic1 {
+						padding-left:15px;
+						padding-bottom:10px;
+					}
+					div.bannerCon dd.bannerPic1 img {
+						width:246px;
+						height:146px;
+						border:1px solid #dfe6e8;
+					}
+					div.bannerCon dl dt.bannerHead,dd.bannerList {
+						padding-left:116px;
+					}
+
+					div.bannerCon dl dd.bannerList {
+						font-weight:bold;
+						letter-spacing:-1px;
+					}
+					div.bannerCon dl dd.bannerPic {
+						position:absolute;
+						top:0;
+						left:15px;
+					}
+
+					div.bannerCon dl.bannerlast {
+						position:relative;
+						padding-bottom:13px;
+					}
+
+
+
+
+				div#notice {
+					clear:both;
+					width:100%;
+					height:40px;
+					border-top:1px solid #d9d9d9;
+				}
+
+				div#notice p {
+					padding-top:13px;
+				}
+
+				div#notice span.noticeCon {
+					display:inline-block;
+					padding-left:18px;
+				}
+
+				div#notice span.date {
+					display:inline-block;
+					padding-left:18px;
+				}
+
+
+				
+
+
+
+
+			

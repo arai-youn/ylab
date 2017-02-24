@@ -1,0 +1,605 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+Transitional//EN""http://www.w3.org/TR/xhtml1/
+DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<title>멜론차트</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="css/chart.css" />
+		<link rel="stylesheet" type="text/css" href="css/quick.css" />
+		<style type="text/css">
+			
+		</style>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+		<script type="text/javascript" src="js/quick.js"></script>
+		<script type="text/javascript">
+			//<![CDATA[
+					
+				$(document).ready(function(){
+
+				
+					timerStart();
+				
+				//topBanner
+					function slide(){
+						$(".topBanner ul:not(:animated)").stop().animate({marginLeft:"-=280px"},300,function(){
+							$(".topBanner ul").css("marginLeft","0");
+							$(".topBanner ul li:first").appendTo($(".topBanner ul"));
+						});
+					};
+
+				//topChart
+					function chartRolling(){
+						$("#topChart ol:not(:animated)").stop().animate({marginTop:"-=15px"},1000,function(){
+							$("#topChart ol").css("marginTop","0");
+							$("#topChart ol li:first").appendTo($("#topChart ol"));
+						});
+					};
+
+					function eventRolling(){
+						$("#event ul:not(:animated)").stop().animate({marginLeft:"-=236px"},1000,function(){
+							$("#event ul").css("marginLeft","0");
+							$("#event ul li:first").appendTo($("#event ul"));
+						});
+					};
+
+
+				//자동 타이머 실행
+					function timerStart(){
+						auto1 = setInterval(function(){
+							slide()
+							eventRolling()
+							
+						},5000);
+						auto2 = setInterval(function(){
+							chartRolling()
+						},3000);
+					}
+				//자동 타이머 (정지)
+					function timerStop(){
+						clearInterval(auto1);
+						clearInterval(auto2);
+					}
+
+
+					$(".bannerBtn1").click(function(){
+						$(".topBanner ul").stop().animate({marginLeft:"-560px"},300,function(){
+							$(".topBanner ul").css("marginLeft","-280px");
+							$(".topBanner ul li:first").appendTo($(".topBanner ul"));
+						});
+						return false;
+					});
+					
+
+					$(".bannerBtn2").click(function(){
+						$(".topBanner ul").stop().animate({marginLeft:"0"},300,function(){
+							$(".topBanner ul").css("marginLeft","-280px");
+							$(".topBanner ul li:last").prependTo($(".topBanner ul"));
+						});
+						return false;
+					});
+
+					
+
+				});
+			//]]>
+		</script>
+	</head>
+
+	<body>
+		<div id="wrap">
+
+			<!-- header -->
+		
+			<div class="headBg">
+				
+		
+				<div id="header">
+					<h1><a href="../melon/index.html"><img src="images/common/logo_melon.png" alt="Melon 로고" title="Melon 로고 - 홈으로 이동" /></a></h1>
+					<div id="MenuNav">
+						<h2 class="hidden">주메뉴</h2>
+							<ul class="mainMenu">
+								<li class="menuList1"><a href=""><strong>멜론차트</strong></a></li>
+								<li class="menuList2"><a href="">최신음악</a></li>
+								<li class="menuList3"><a href="">장르음악</a></li>
+								<li class="menuList4"><a href="">멜론 DJ</a></li>
+								<li class="menuList5"><a href="">멜론 TV</a></li>
+								<li class="menuList6"><a href="">아티스트 +</a></li>
+								<li class="menuList7"><a href="">뮤직스토리</a></li>
+								<li class="menuList8"><a href="">더보기</a></li>
+								<li class="menuList9"><a href="">마이뮤직</a></li>
+								<li class="menuList10"><a href="">소식</a></li>
+							</ul>
+						<div class="subMenu">
+							<ul class="subMenu1">
+								<li class="subMenu1Li1"><a href="">멜론TOP100</a></li>
+								<li class="subMenu1Li2"><a href="">주간 인기상</a></li>
+								<li class="subMenu1Li3"><a href="">트렌트 차트</a></li>
+								<li class="subMenu1Li4"><a href="">장르/스타일 차트</a></li>
+								<li class="subMenu1Li5"><a href="">시대별 차트</a></li>
+							</ul>
+							<p class="subBtn1"><a href="">차트파인더</a></p>
+						</div>
+					</div>
+
+						<!-- search field -->
+					<form method="post" action="">
+						<fieldset>
+							<legend class="hidden"><label for="musicSearch">통합검색(곡명, 앨범명, 아티스트명을 입력하세요)</label></legend>
+								<input type="text" id="musicSearch" name="musicSearch" size="30" />
+								<input type="button" class="autoSearch" name="autoSearch" title="자동검색 펼침" />
+								<input type="button" class="searchIcon" name="searchIcon" title="검색" />
+						</fieldset>
+					</form>
+
+					<div id="topChart">
+						<ol class="topChartlist">
+							<li><span class="topNum">1.</span><span class="artistName"><a href="">Maroon 5</a></span><span class="rankUp">순위상승</span><span class="num">4</span></li>
+							<li><span class="topNum">2.</span><span class="artistName"><a href="">다이나믹 듀오</a></span><span class="rankUp">순위상승</span><span class="num">7</span></li>
+							<li><span class="topNum">3.</span><span class="artistName"><a href="">지드래곤(G-Dr...</a></span><span class="rankUp">순위상승</span><span class="num">9</span></li>
+							<li><span class="topNum">4.</span><span class="artistName"><a href="">다비치</a></span><span class="rankUp">순위상승</span><span class="num">5</span></li>
+							<li><span class="normalNum">5.</span><span class="artistName"><a href="">허각</a></span><span class="rankUp">순위상승</span><span class="num">5</span></li>
+							<li><span class="normalNum">6.</span><span class="artistName"><a href="">어머님 은혜</a></span><span class="rankUp">순위상승</span><span class="num">95</span></li>
+							<li><span class="normalNum">7.</span><span class="artistName"><a href="">1월부터 6월까지</a></span><span class="rankUp">순위상승</span><span class="num">10</span></li>
+							<li><span class="normalNum">8.</span><span class="artistName"><a href="">뽀롱뽀롱 뽀로로</a></span><span class="rankUp">순위상승</span><span class="num">164</span></li>
+							<li><span class="normalNum">9.</span><span class="artistName"><a href="">후아유 OST</a></span><span class="rankUp">순위상승</span><span class="num">55</span></li>
+							<li><span class="normalNum">10.</span><span class="artistLast"><a href="">신화</a></span><span class="rankUp">순위상승</span><span class="num">156</span></li>
+						</ol>
+						<p class="more"><a href="">더보기</a><p>
+					</div>
+					
+
+
+					<ul class="topMenuL">
+						<li class="topMenuL1"><a href="">멜론 플레이어</a></li>
+						<li class="topMenuL2"><a href="">멜론모바일</a></li>
+						<li class="topMenuL3"><a href="">Altalk</a></li>
+						<li class="topMenuL4"><a href="">멜론뮤직어워드</a></li>
+					</ul>
+					<ul class="topMenuR">
+						<li class="topMenuR1"><a href="">이용권구매</a></li>
+						<li class="topMenuR2"><a href="">VIP 혜택관</a></li>
+						<li class="topMenuR3"><a href="">멜론캐쉬충전</a></li>
+						<li class="topMenuR4"><a href="">이벤트</a></li>
+						<li class="topMenuR5"><a href="">고객센터</a></li>
+					</ul>
+					
+					<div class="topBanner">
+						<ul>
+							<li><a href=""><img src="images/common/imgUrl20150430063339.jpg" alt="멜론 이벤트 배너1" title="멜론과 피트니스룸 VIP혜택관" /></a></li>
+							<li><a href=""><img src="images/common/imgUrl20150401105516.jpg" alt="멜론 이벤트 배너2" title="MelOn Event 3개월간의 파격적인 할인" /></a></li>
+							<li><a href=""><img src="images/common/imgUrl20150430062853.jpg" alt="멜론 이벤트 배너3" title="상남자로 돌아온 투포케이[오늘 예쁘네]" /></a></li>
+						</ul> 
+					</div>
+					<div class="bannerBtn">
+						<a class="bannerBtn1" href="" title="이전 이벤트 보기">이전</a><a class="bannerBtn2" href="" title="다음 이벤트 보기">다음</a>
+					</div>
+				</div>
+			</div><!-- headBg end -->
+
+			<!-- header end -->
+
+			<!-- container -->
+
+			<div id="container">
+					<h2>멜론 TOP 100</h2>
+					<div id="conTop">
+					<ul class="melChart">
+							<li class="melChart1"><a href=""><strong>실시간</strong></a></li>
+							<li class="melChart2"><a href="">급상승</a></li>
+							<li class="melChart3"><a href="">일간</a></li>
+							<li class="melChart4"><a href="">주간</a></li>
+							<li class="melChart5"><a href="">월간</a></li>
+					</ul>
+					<div id="musicChart">
+						<img src="images/chart/img_tutorial01.png" alt="멜론 차트 보는 법 소개" title="실시간 차트를 움직이는 화면으로 볼 수 있습니다. 1위부터 3위까지의 점유율을 %단위로 표시합니다." />
+					</div>
+					<div id="musicInfo">
+				
+					</div>
+					
+				
+				</div> <!-- contTop end -->
+
+				<div id="conBottom">
+					<div class="musicBtn">
+						<span class="allSelect"><a href="" alt="전체선택" title="전체선택">전체선택</a></span>
+						<span class="listen"><a href="" alt="듣기" title="듣기">듣기</a></span>
+						<span class="musicDown"><a href="" alt="다운" title="듣기">다운</a></span>
+						<span class="musicAdd"><a href="" alt="담기" title="담기">담기</a></span>
+						<span class="musicGift"><a href="" alt="선물" title="선물">선물</a></span>
+						<span class="topListen"><a href="" alt="TOP 100 듣기" title="TOP 100 듣기">TOP 100 듣기</a></span>
+					</div>	
+					<div id="chartTable">
+						<table>
+							<caption class="hidden">Melon Music Chart 1위부터 100위까지의 순위입니다. 표 앞쪽 체크박스를 표시하여 원하는 노래를 듣거나 담을 수 있습니다.</caption>
+							<thead>
+							<tr>
+								<th class="tableTd1"><input type="checkbox" id="musicSelect" name="musicSelect" /></th>
+								<th class="tableTd2">순위</th>
+								<th class="tableTd3"></th>
+								<th class="tableTd4">곡정보</th>
+								<th class="tableTd5">좋아요</th>
+								<th class="tableTd6"><span>뮤비&nbsp;</span><span>다운&nbsp;</span><span>링/벨</span></th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td><input type="checkbox" id="musicSelect" name="musicSelect" /></td>
+								<td><span class="muPromotion">추천</span></td>
+								<td>
+									<div class="chartlistBtn">
+										<a href="" alt="GOD 앨범 이미지" title="GOD 페이지 이동"><img src="images/chart/2315778_ths.jpg"/></a>
+										<input type="button" class="playBtn" title="GOD 재생 - 새창" />
+										<input type="button" class="addBtn" title="GOD 플레이리스트에 담기 - 새창"  />
+										<a href="" alt="GOD 곡정보" title="GOD 곡정보 보러가기 - 새창"><span class="musicInfo">곡정보</span></a>
+									</div>
+								</td>
+								<td>
+									<div class="chartalbumInfo">
+										<a href="" alt="GOD 재생" title="GOD 재생"><span class="musicName">GOD</span></a><br />
+										<a href="" alt="지민 (AOA), J.DON (이승협 Of N.Flying) 페이지 이동" title="지민 (AOA), J.DON (이승협 Of N.Flying) 페이지 이동"><span class="artistName">지민 (AOA), J.DON (이승협 Of N.Flying)</span></a>
+										<a href="" alt="N PROJECT #1 GOD 페이지 이동" title="N PROJECT #1 GOD 페이지 이동"><span class="albumName">N PROJECT #1 GOD</span></a>
+									</div>
+								</td>
+								<td>
+									<span class="likeCount"><input type="button" class="likeBtn" />3,100</span>
+								</td>
+								<td>
+									<a href="" class="MuVideo">뮤비</a>
+									<a href="" class="MuDown">다운</a>
+									<a href="" class="MuSound">링/벨</a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="musicSelect" name="musicSelect" /></td>
+								<td><span class="chartRanktop">1</span><span class="rankNone">-</span><span class="num">0</span></td>
+								<td>
+									<div class="chartlistBtn">
+										<a href="" alt="BIGBANG M 이미지" title="BIGBANG M 페이지 이동"><img src="images/chart/2316478_ths.jpg"/></a>
+										<input type="button" class="playBtn" title="LOSER 재생 - 새창" />
+										<input type="button" class="addBtn" title="LOSER 플레이리스트에 담기 - 새창"  />
+										<a href="" alt="LOSER 곡정보" title="LOSER 곡정보 보러가기 - 새창"><span class="musicInfo">곡정보</span></a>
+									</div>
+								</td>
+								<td>
+									<div class="chartalbumInfo">
+										<a href="" alt="LOSER 듣기" title="LOSER 듣기"><span class="musicName">LOSER</span></a><br />
+										<a href="" alt="BIGBANG 페이지 이동" title="BIGBANG 페이지 이동"><span class="artistName">BIGBANG</span></a>
+										<a href="" alt="M 페이지 이동" title="M 페이지 이동"><span class="albumName">M</span></a>
+									</div>
+								</td>
+								<td>
+									<span class="likeCount"><input type="button" class="likeBtn" />63,815</span>
+								</td>
+								<td>
+									<a href="" class="MuVideo">뮤비</a>
+									<a href="" class="MuDown">다운</a>
+									<a href="" class="MuSound">링/벨</a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="musicSelect" name="musicSelect" /></td>
+								<td><span class="chartRanktop">2</span><span class="rankUp">-</span><span class="numUp">1</span></td>
+								<td>
+									<div class="chartlistBtn">
+										<a href="" alt="BoA Kiss My Lips 앨범 이미지" title="BoA Kiss My Lips 페이지 이동"><img src="images/chart/2316838_ths.jpg"/></a>
+										<input type="button" class="playBtn" title="Kiss My Lips 재생 - 새창" />
+										<input type="button" class="addBtn" title="Kiss My Lips 플레이리스트에 담기 - 새창"  />
+										<a href="" alt="Kiss My Lips 곡정보" title="Kiss My Lips 곡정보 보러가기 - 새창"><span class="musicInfo">곡정보</span></a>
+									</div>
+								</td>
+								<td>
+									<div class="chartalbumInfo">
+										<a href=""><span class="musicName">Kiss My Lips (Feat. 개코)</span></a><br />
+										<a href=""><span class="artistName">보아 (BoA)</span></a>
+										<a href=""><span class="albumName">Kiss My Lips - The 8th Album</span></a>
+									</div>
+								</td>
+								<td>
+									<span class="likeCount"><input type="button" class="likeBtn" />6,923</span>
+								</td>
+								<td>
+									<a href="" class="MuVideo">뮤비</a>
+									<a href="" class="MuDown">다운</a>
+									<a href="" class="MuSound">링/벨</a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="musicSelect" name="musicSelect" /></td>
+								<td><span class="chartRanktop">3</span><span class="rankNone">-</span><span class="num">0</span></td>
+								<td>
+									<div class="chartlistBtn">
+										<a href="" alt="BIGBANG M 이미지" title="BIGBANG M 페이지 이동"><img src="images/chart/2316478_ths.jpg"/></a>
+										<input type="button" class="playBtn" title="BAE BAE 재생 - 새창" />
+										<input type="button" class="addBtn" title="BAE BAE 플레이리스트에 담기 - 새창"  />
+										<a href="" alt="BAE BAE 곡정보" title="BAE BAE 곡정보 보러가기 - 새창"><span class="musicInfo">곡정보</span></a>
+									</div>
+								</td>
+								<td>
+									<div class="chartalbumInfo">
+										<a href=""><span class="musicName">BAE BAE</span></a><br />
+										<a href=""><span class="artistName">BIGBANG</span></a>
+										<a href=""><span class="albumName">M</span></a>
+									</div>
+								</td>
+								<td>
+									<span class="likeCount"><input type="button" class="likeBtn" />40,933</span>
+								</td>
+								<td>
+									<a href="" class="MuVideo">뮤비</a>
+									<a href="" class="MuDown">다운</a>
+									<a href="" class="MuSound">링/벨</a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="musicSelect" name="musicSelect" /></td>
+								<td><span class="chartRank">4</span><span class="rankNone">-</span><span class="num">0</span></td>
+								<td>
+									<div class="chartlistBtn">
+										<a href="" alt="San E 양치기 소년 앨범 이미지" title="San E 양치기 소년 페이지 이동"><img src="images/chart/2313106_ths.jpg"/></a>
+										<input type="button" class="playBtn" title="Me You(Feat. 백예린 Of 15&) 재생 - 새창" />
+										<input type="button" class="addBtn" title="Me You(Feat. 백예린 Of 15&) 플레이리스트에 담기 - 새창"  />
+										<a href="" alt="Me You(Feat. 백예린 Of 15&) 곡정보" title="Me You(Feat. 백예린 Of 15&) 곡정보 보러가기 - 새창"><span class="musicInfo">곡정보</span></a>
+									</div>
+								</td>
+								<td>
+									<div class="chartalbumInfo">
+										<a href=""><span class="musicName">Me You(Feat. 백예린 Of 15&)</span></a><br />
+										<a href=""><span class="artistName">San E</span></a>
+										<a href=""><span class="albumName">양치기 소년</span></a>
+									</div>
+								</td>
+								<td>
+									<span class="likeCount"><input type="button" class="likeBtn" />35,895</span>
+								</td>
+								<td>
+									<a href="" class="MuVideo">뮤비</a>
+									<a href="" class="MuDown">다운</a>
+									<a href="" class="MuSound">링/벨</a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="musicSelect" name="musicSelect" /></td>
+								<td><span class="chartRank">5</span><span class="rankNone">-</span><span class="num">0</span></td>
+								<td>
+									<div class="chartlistBtn">
+										<a href="" alt="Kiss My Lips 앨범 이미지" title="Kiss My Lips 페이지 이동"><img src="images/chart/2316838_ths.jpg"/></a>
+										<input type="button" class="playBtn" title="Kiss My Lips 재생 - 새창" />
+										<input type="button" class="addBtn" title="Kiss My Lips 플레이리스트에 담기 - 새창"  />
+										<a href="" alt="Kiss My Lips 곡정보" title="Kiss My Lips 곡정보 보러가기 - 새창"><span class="musicInfo">곡정보</span></a>
+									</div>
+								</td>
+								<td>
+									<div class="chartalbumInfo">
+										<a href=""><span class="musicName">Kiss My Lips</span></a><br />
+										<a href=""><span class="artistName">보아 (BoA)</span></a>
+										<a href=""><span class="albumName">Kiss My Lips - The 8th Album</span></a>
+									</div>
+								</td>
+								<td>
+									<span class="likeCount"><input type="button" class="likeBtn" />3,611</span>
+								</td>
+								<td>
+									<a href="" class="MuVideo">뮤비</a>
+									<a href="" class="MuDown">다운</a>
+									<a href="" class="MuSound">링/벨</a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="musicSelect" name="musicSelect" /></td>
+								<td><span class="chartRank">6</span><span class="rankDown">-</span><span class="numDown">3</span></td>
+								<td>
+									<div class="chartlistBtn">
+										<a href="" alt="Kiss My Lips 앨범 이미지" title="Kiss My Lips 페이지 이동"><img src="images/chart/2316838_ths.jpg"/></a>
+										<input type="button" class="playBtn" title="Kiss My Lips 재생 - 새창" />
+										<input type="button" class="addBtn" title="Kiss My Lips 플레이리스트에 담기 - 새창"  />
+										<a href="" alt="Kiss My Lips 곡정보" title="Kiss My Lips 곡정보 보러가기 - 새창"><span class="musicInfo">곡정보</span></a>
+									</div>
+								</td>
+								<td>
+									<div class="chartalbumInfo">
+										<a href=""><span class="musicName">Kiss My Lips</span></a><br />
+										<a href=""><span class="artistName">보아 (BoA)</span></a>
+										<a href=""><span class="albumName">Kiss My Lips - The 8th Album</span></a>
+									</div>
+								</td>
+								<td>
+									<span class="likeCount"><input type="button" class="likeBtn" />3,611</span>
+								</td>
+								<td>
+									<a href="" class="MuVideo">뮤비</a>
+									<a href="" class="MuDown">다운</a>
+									<a href="" class="MuSound">링/벨</a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="musicSelect" name="musicSelect" /></td>
+								<td><span class="chartRank">7</span><span class="rankNone">-</span><span class="num">0</span></td>
+								<td>
+									<div class="chartlistBtn">
+										<a href="" alt="Kiss My Lips 앨범 이미지" title="Kiss My Lips 페이지 이동"><img src="images/chart/2316838_ths.jpg"/></a>
+										<input type="button" class="playBtn" title="Kiss My Lips 재생 - 새창" />
+										<input type="button" class="addBtn" title="Kiss My Lips 플레이리스트에 담기 - 새창"  />
+										<a href="" alt="Kiss My Lips 곡정보" title="Kiss My Lips 곡정보 보러가기 - 새창"><span class="musicInfo">곡정보</span></a>
+									</div>
+								</td>
+								<td>
+									<div class="chartalbumInfo">
+										<a href=""><span class="musicName">Kiss My Lips</span></a><br />
+										<a href=""><span class="artistName">보아 (BoA)</span></a>
+										<a href=""><span class="albumName">Kiss My Lips - The 8th Album</span></a>
+									</div>
+								</td>
+								<td>
+									<span class="likeCount"><input type="button" class="likeBtn" />3,611</span>
+								</td>
+								<td>
+									<a href="" class="MuVideo">뮤비</a>
+									<a href="" class="MuDown">다운</a>
+									<a href="" class="MuSound">링/벨</a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="musicSelect" name="musicSelect" /></td>
+								<td><span class="chartRank">8</span><span class="rankNone">-</span><span class="num">0</span></td>
+								<td>
+									<div class="chartlistBtn">
+										<a href="" alt="Kiss My Lips 앨범 이미지" title="Kiss My Lips 페이지 이동"><img src="images/chart/2316838_ths.jpg"/></a>
+										<input type="button" class="playBtn" title="Kiss My Lips 재생 - 새창" />
+										<input type="button" class="addBtn" title="Kiss My Lips 플레이리스트에 담기 - 새창"  />
+										<a href="" alt="Kiss My Lips 곡정보" title="Kiss My Lips 곡정보 보러가기 - 새창"><span class="musicInfo">곡정보</span></a>
+									</div>
+								</td>
+								<td>
+									<div class="chartalbumInfo">
+										<a href=""><span class="musicName">Kiss My Lips</span></a><br />
+										<a href=""><span class="artistName">보아 (BoA)</span></a>
+										<a href=""><span class="albumName">Kiss My Lips - The 8th Album</span></a>
+									</div>
+								</td>
+								<td>
+									<span class="likeCount"><input type="button" class="likeBtn" />3,611</span>
+								</td>
+								<td>
+									<a href="" class="MuVideo">뮤비</a>
+									<a href="" class="MuDown">다운</a>
+									<a href="" class="MuSound">링/벨</a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="musicSelect" name="musicSelect" /></td>
+								<td><span class="chartRank">9</span><span class="rankNone">-</span><span class="num">0</span></td>
+								<td>
+									<div class="chartlistBtn">
+										<a href="" alt="Kiss My Lips 앨범 이미지" title="Kiss My Lips 페이지 이동"><img src="images/chart/2316838_ths.jpg"/></a>
+										<input type="button" class="playBtn" title="Kiss My Lips 재생 - 새창" />
+										<input type="button" class="addBtn" title="Kiss My Lips 플레이리스트에 담기 - 새창"  />
+										<a href="" alt="Kiss My Lips 곡정보" title="Kiss My Lips 곡정보 보러가기 - 새창"><span class="musicInfo">곡정보</span></a>
+									</div>
+								</td>
+								<td>
+									<div class="chartalbumInfo">
+										<a href=""><span class="musicName">Kiss My Lips</span></a><br />
+										<a href=""><span class="artistName">보아 (BoA)</span></a>
+										<a href=""><span class="albumName">Kiss My Lips - The 8th Album</span></a>
+									</div>
+								</td>
+								<td>
+									<span class="likeCount"><input type="button" class="likeBtn" />3,611</span>
+								</td>
+								<td>
+									<a href="" class="MuVideo">뮤비</a>
+									<a href="" class="MuDown">다운</a>
+									<a href="" class="MuSound">링/벨</a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="musicSelect" name="musicSelect" /></td>
+								<td><span class="chartRank">10</span><span class="rankNone">-</span><span class="num">0</span></td>
+								<td>
+									<div class="chartlistBtn">
+										<a href="" alt="Kiss My Lips 앨범 이미지" title="Kiss My Lips 페이지 이동"><img src="images/chart/2316838_ths.jpg"/></a>
+										<input type="button" class="playBtn" title="Kiss My Lips 재생 - 새창" />
+										<input type="button" class="addBtn" title="Kiss My Lips 플레이리스트에 담기 - 새창"  />
+										<a href="" alt="Kiss My Lips 곡정보" title="Kiss My Lips 곡정보 보러가기 - 새창"><span class="musicInfo">곡정보</span></a>
+									</div>
+								</td>
+								<td>
+									<div class="chartalbumInfo">
+										<a href=""><span class="musicName">Kiss My Lips</span></a><br />
+										<a href=""><span class="artistName">보아 (BoA)</span></a>
+										<a href=""><span class="albumName">Kiss My Lips - The 8th Album</span></a>
+									</div>
+								</td>
+								<td>
+									<span class="likeCount"><input type="button" class="likeBtn" />3,611</span>
+								</td>
+								<td>
+									<a href="" class="MuVideo">뮤비</a>
+									<a href="" class="MuDown">다운</a>
+									<a href="" class="MuSound">링/벨</a>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					</div> <!-- chartTable end -->
+
+					<div class="musicBtn">
+						<span class="allSelect"><a href="" alt="전체선택" title="전체선택">전체선택</a></span>
+						<span class="listen"><a href="" alt="듣기" title="듣기">듣기</a></span>
+						<span class="musicDown"><a href="" alt="다운" title="듣기">다운</a></span>
+						<span class="musicAdd"><a href="" alt="담기" title="담기">담기</a></span>
+						<span class="musicGift"><a href="" alt="선물" title="선물">선물</a></span>
+						<span class="topListen"><a href="" alt="TOP 100 듣기" title="TOP 100 듣기">TOP 100 듣기</a></span>
+					</div>	
+
+					<p class="chartPage"> <a href="" alt="1위에서 10위까지 차트 페이지 보기"  title="1위에서 10위까지 차트 페이지 보기">1 - 10 위</a></p>
+
+					<p class="topmoveBtn"><a href="" alt="페이지 맨 위로 이동" title="페이지 맨 위로 이동">TOP</a></p>
+				
+				</div> <!-- conMiddle end -->
+
+				<!-- container end -->
+
+			<!-- footer -->
+
+			<div id="footer">
+				
+				<ul class="footerList">
+					<li class="footerLis1"><a href="">회사소개</a></li>
+					<li><a href="">이용약관</a></li>
+					<li><a href=""><strong>개인정보취급방침</strong></a></li>
+					<li><a href="">청소년보호정책</a></li>
+					<li><a href="">제휴/프로모션문의</a></li>
+					<li><a href="">이메일주소무단수집거부</a></li>
+					<li><a href="">고객센터</a></li>
+					<li><a href="">파트너센터</a></li>
+				</ul>
+			
+				
+				<p>
+					<span class="pSpanfist">서울시 강남구 테헤란로 103길 17 정석빌딩</span><span>대표이사 : 신원수</span><span>사업자등록번호 :  123-13-456789</span>
+					<span>통신판매업 신고번호 : 제2011-서울강남-02008호</span>
+					<span class="pSpanfist">문의전화(평일 09:00~18:00) : 1566-7727(유료)</span><span>&copy; LOEN Entertainment, Inc. All rights reserved</span>
+				</p>
+				
+
+				
+				<ul class="footerBanner">
+					<li><a href=""><img src="images/common/ban_footer01_150210.png" alt="2015 대한민국 퍼스트브랜드 대상" title="2015 대한민국 퍼스트브랜드 대상" /></a></li>
+					<li><a href=""><img src="images/common/ban_footer02_150324.png" alt="한국능률협회컨설팅 2015브랜드 파워 1위" title="한국능률협회컨설팅 2015브랜드 파워 1위" /></a></li>
+					<li><a href=""><img src="images/common/ban_footer04_150210.png" alt="2015 가장 신뢰하는 브랜드 대상" title="2015 가장 신뢰하는 브랜드 대상" /></a></li>
+					<li><a href=""><img src="images/common/ban_footer08.png" alt="2014 국가 브랜드 대상" title="2014 국가 브랜드 대상" /></a></li>
+					<li><a href=""><img src="images/common/ban_footer06.png" alt="음악저작권 이용허락 인증" title="음악저작권 이용허락 인증" /></a></li>
+					<li><a href=""><img src="images/common/ban_footer07.png" alt="클린사이트" title="클린사이트"/></a></li>
+					<li><a href=""><img src="images/common/ban_footer09.png" alt="정보보호 관리체계 ISMS 인증" title="정보보호 관리체계 ISMS 인증" /></a></li>
+				</ul>
+
+			</div>
+
+			<!-- footer end -->
+			
+			<div class="quick">
+				<dl>
+					<dt><a href="" alt="포트폴리오 바로가기" ><img src="images/common/portfolio_logo.png" alt="포트폴리오 바로가기" /></dt>
+					<dd>
+						<ul>
+							<li><a href="../index.html">Melon_Main</a></li>
+							<li><a class="on" href="chart.html">Melon_chart</a></li>
+							<li><a href="member.html">Melon_member</a></li>
+							<li><a href="weekly.html">Melon_weekly</a></li>
+							<!-- <li><a href="artplust.html">Melon_artplust</a></li> -->
+						</ul>
+					</dd>
+				</dl>	
+			</div><!--//quickmenu -->
+
+		</div>  <!-- wrap end -->
+		
+	</body>
+</html>

@@ -1,0 +1,1135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+Transitional//EN""http://www.w3.org/TR/xhtml1/
+DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<title>MelOn::음악이 필요한 순간, 멜론</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/indexlayout.css" />
+		<link rel="stylesheet" type="text/css" href="css/indexcon.css" />
+		<link rel="stylesheet" type="text/css" href="css/quick.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+		<script type="text/javascript" src="js/quick.js"></script>
+		<script type="text/javascript">
+			//<![CDATA[
+					
+				$(document).ready(function(){
+					timerStart();
+				
+				//topBanner
+					function slide(){
+						$(".topBanner ul:not(:animated)").stop().animate({marginLeft:"-=280px"},300,function(){
+							$(".topBanner ul").css("marginLeft","0");
+							$(".topBanner ul li:first").appendTo($(".topBanner ul"));
+						});
+					};
+					
+
+					$(".rollingBtn span").click(function(){
+						var num = $(this).index();
+						var wid = $(".eventRoll li").width();
+						$(".eventRoll").stop().animate({marginLeft:-num*wid+"px"},700);
+						return false;
+					});
+					
+
+					$(".conList ul li").click(function(){
+						var num = $(this).index();
+						var wid = $(".newAlbumcon ul").width();
+						$(".newAlbumcon").stop().animate({marginLeft:-num*wid+"px"},700);
+						return false;
+					});
+
+					
+					
+				//topChart
+					function chartRolling(){
+						$("#topChart ol:not(:animated)").stop().animate({marginTop:"-=15px"},1000,function(){
+							$("#topChart ol").css("marginTop","0");
+							$("#topChart ol li:first").appendTo($("#topChart ol"));
+						});
+					};
+
+					function eventRolling(){
+						$("#event ul:not(:animated)").stop().animate({marginLeft:"-=236px"},1000,function(){
+							$("#event ul").css("marginLeft","0");
+							$("#event ul li:first").appendTo($("#event ul"));
+						});
+					};
+
+
+				//자동 타이머 실행
+					function timerStart(){
+						auto1 = setInterval(function(){
+							slide()
+							eventRolling()
+							
+						},5000);
+						auto2 = setInterval(function(){
+							chartRolling()
+						},3000);
+					}
+				//자동 타이머 (정지)
+					function timerStop(){
+						clearInterval(auto1);
+						clearInterval(auto2);
+					}
+
+
+					$(".bannerBtn1").click(function(){
+						$(".topBanner ul").stop().animate({marginLeft:"-560px"},300,function(){
+							$(".topBanner ul").css("marginLeft","-280px");
+							$(".topBanner ul li:first").appendTo($(".topBanner ul"));
+						});
+						return false;
+					});
+					
+
+					$(".bannerBtn2").click(function(){
+						$(".topBanner ul").stop().animate({marginLeft:"0"},300,function(){
+							$(".topBanner ul").css("marginLeft","-280px");
+							$(".topBanner ul li:last").prependTo($(".topBanner ul"));
+						});
+						return false;
+					});
+
+				// conBottom tab
+					
+					$("div.listWrap ul").hide();
+					$("div.listWrap ul.recentList").show();
+					
+
+					$("#newCon p span.recentList").click(function(){
+						$("div.listWrap ul.hotList").hide();
+						$("div.listWrap ul.recentList").show();
+						return false;
+					});
+
+					$("#newCon p span.hotList").click(function(){
+						$("div.listWrap ul.recentList").hide();
+						$("div.listWrap ul.hotList").show();
+						return false;
+					});
+					
+					//chart tab
+
+
+					$("h3").click(function(e){
+						e.preventDefault();
+						$(this).find("a").addClass("on").find("span").addClass("active");
+						$(this).siblings("h3").find("a").removeClass("on").find("span").removeClass("active");
+
+						$(this).siblings("div, p").hide();
+						$(this).next().show().next().show();
+
+					});
+
+
+					$(".list ol li").hover(function(){
+						$(this).addClass("over").siblings().removeClass("over");
+						//$(".list ol li div").toggleClass("rank");//.addClass("rank").siblings().removeClass("rank");
+
+					});
+
+				
+					/*
+					$("ul.tabs li").click(function () {
+					$("ul.tabs li").removeClass("active").css("color", "#333");
+					//$(this).addClass("active").css({"color": "darkred","font-weight": "bolder"});
+					$(this).addClass("active").css("color", "darkred");
+					$(".tab_content").hide()
+					var activeTab = $(this).attr("rel");
+					$("#" + activeTab).fadeIn()
+					*/
+				
+					
+
+				});
+			//]]>
+		</script>
+	</head>
+
+	<body>
+		<div id="wrap">
+
+			<!-- header -->
+		
+			<div class="headBg">
+				
+		
+				<div id="header">
+					<h1><a href="../index.html" alt="xhtml" title="Melon 포트폴리오 사이트 메인 바로가기"><img src="images/common/logo_melon.png" alt="Melon 로고" title="Melon 로고 - 메인으로 이동" /></a></h1>
+					<h2 class="hidden">주메뉴</h2>
+						<ul class="mainMenu">
+							<li class="menuList1"><a href="">멜론차트</a></li>
+							<li class="menuList2"><a href="">최신음악</a></li>
+							<li class="menuList3"><a href="">장르음악</a></li>
+							<li class="menuList4"><a href="">멜론 DJ</a></li>
+							<li class="menuList5"><a href="">멜론 TV</a></li>
+							<li class="menuList6"><a href="">아티스트 +</a></li>
+							<li class="menuList7"><a href="">뮤직스토리</a></li>
+							<li class="menuList8"><a href="">더보기</a></li>
+							<li class="menuList9"><a href="">마이뮤직</a></li>
+							<li class="menuList10"><a href="">소식</a></li>
+						</ul>
+						
+						<!-- search field -->
+					<form method="post" action="">
+						<fieldset>
+							<legend class="hidden"><label for="musicSearch">통합검색(곡명, 앨범명, 아티스트명을 입력하세요)</label></legend>
+								<input type="text" id="musicSearch" name="musicSearch" size="30" />
+								<input type="button" class="autoSearch" name="autoSearch" title="자동검색 펼침" />
+								<input type="button" class="searchIcon" name="searchIcon" title="검색" />
+						</fieldset>
+					</form>
+
+					<div id="topChart">
+						<ol class="topChartlist">
+							<li><span class="topNum">1.</span><span class="artistName"><a href="">Maroon 5</a></span><span class="rankUp">순위상승</span><span class="num">4</span></li>
+							<li><span class="topNum">2.</span><span class="artistName"><a href="">다이나믹 듀오</a></span><span class="rankUp">순위상승</span><span class="num">7</span></li>
+							<li><span class="topNum">3.</span><span class="artistName"><a href="">지드래곤(G-Dr...</a></span><span class="rankUp">순위상승</span><span class="num">9</span></li>
+							<li><span class="topNum">4.</span><span class="artistName"><a href="">다비치</a></span><span class="rankUp">순위상승</span><span class="num">5</span></li>
+							<li><span class="normalNum">5.</span><span class="artistName"><a href="">허각</a></span><span class="rankUp">순위상승</span><span class="num">5</span></li>
+							<li><span class="normalNum">6.</span><span class="artistName"><a href="">어머님 은혜</a></span><span class="rankUp">순위상승</span><span class="num">95</span></li>
+							<li><span class="normalNum">7.</span><span class="artistName"><a href="">1월부터 6월까지</a></span><span class="rankUp">순위상승</span><span class="num">10</span></li>
+							<li><span class="normalNum">8.</span><span class="artistName"><a href="">뽀롱뽀롱 뽀로로</a></span><span class="rankUp">순위상승</span><span class="num">164</span></li>
+							<li><span class="normalNum">9.</span><span class="artistName"><a href="">후아유 OST</a></span><span class="rankUp">순위상승</span><span class="num">55</span></li>
+							<li><span class="normalNum">10.</span><span class="artistLast"><a href="">신화</a></span><span class="rankUp">순위상승</span><span class="num">156</span></li>
+						</ol>
+						<p class="more"><a href="">더보기</a><p>
+					</div>
+					
+
+
+					<ul class="topMenuL">
+						<li class="topMenuL1"><a href="">멜론 플레이어</a></li>
+						<li class="topMenuL2"><a href="">멜론모바일</a></li>
+						<li class="topMenuL3"><a href="">Altalk</a></li>
+						<li class="topMenuL4"><a href="">멜론뮤직어워드</a></li>
+					</ul>
+					<ul class="topMenuR">
+						<li class="topMenuR1"><a href="">이용권구매</a></li>
+						<li class="topMenuR2"><a href="">VIP 혜택관</a></li>
+						<li class="topMenuR3"><a href="">멜론캐쉬충전</a></li>
+						<li class="topMenuR4"><a href="">이벤트</a></li>
+						<li class="topMenuR5"><a href="">고객센터</a></li>
+					</ul>
+					
+					<div class="topBanner">
+						<ul>
+							<li><a href=""><img src="images/common/imgUrl20150430063339.jpg" alt="멜론 이벤트 배너1" title="멜론과 피트니스룸 VIP혜택관" /></a></li>
+							<li><a href=""><img src="images/common/imgUrl20150401105516.jpg" alt="멜론 이벤트 배너2" title="MelOn Event 3개월간의 파격적인 할인" /></a></li>
+							<li><a href=""><img src="images/common/imgUrl20150430062853.jpg" alt="멜론 이벤트 배너3" title="상남자로 돌아온 투포케이[오늘 예쁘네]" /></a></li>
+						</ul> 
+					</div>
+					<div class="bannerBtn">
+						<a class="bannerBtn1" href="" title="이전 이벤트 보기">이전</a><a class="bannerBtn2" href="" title="다음 이벤트 보기">다음</a>
+					</div>
+				</div>
+			</div><!-- headBg end -->
+
+			<!-- header end -->
+
+
+			<!-- container -->
+
+			<div id="container">
+				<div id="conTop">
+					<div id="newAlbum">
+						<h2><a href="" alt="최신 앨범" title="최신 앨범">최신앨범</a></h2>
+						<div class="conList">
+							<ul class="categoryList">
+								<li class="conList1"><a href="" alt="전체 최신앨범 보기" title="전체 최신앨범 보기">전체</a></li>
+								<li><a href="" alt="가요 최신앨범 보기" title="가요 최신앨범 보기">가요</a></li>
+								<li><a href="" alt="POP 최신앨범 보기" title=" POP 최신앨범 보기">POP</a></li>
+								<li><a href="" alt="OST 최신앨범 보기" title="OST 최신앨범 보기">OST</a></li>
+								<li><a href="" alt="J-POP 최신앨범 보기" title="J-POP 최신앨범 보기">J-POP</a></li>
+							</ul>
+							<p class="conListnum"><span class="conListpresent">1</span>/<span class="conListall">5</span></p>
+						</div>
+						<div class="newAlbumcon">
+							<ul class="albumList1">
+								<li><a href=""><img src="images/index/2316838.jpg" alt="보아(BoA)" /></a></li>
+								<li><a href=""><img src="images/index/2316830.jpg" alt="크레용팝" /></a></li>
+								<li><a href=""><img src="images/index/2316828.jpg" alt="버벌진트" /></a></li>
+								<li><a href=""><img src="images/index/2316706.jpg" alt="배치기" /></a></li>
+								<li><a href=""><img src="images/index/2316829.jpg" alt="박수진" /></a></li>
+								<li><a href=""><img src="images/index/2316758.jpg" alt="양희은" /></a></li>
+							</ul>
+							<ul class="albumList2">
+								<li><a href=""><img src="images/index/2316706.jpg" alt="배치기" /></a></li>
+								<li><a href=""><img src="images/index/2316829.jpg" alt="박수진" /></a></li>
+								<li><a href=""><img src="images/index/2316758.jpg" alt="양희은" /></a></li>
+								<li><a href=""><img src="images/index/2316838.jpg" alt="보아(BoA)" /></a></li>
+								<li><a href=""><img src="images/index/2316830.jpg" alt="크레용팝" /></a></li>
+								<li><a href=""><img src="images/index/2316828.jpg" alt="버벌진트" /></a></li>
+							</ul>
+							<ul class="albumList3">
+								<li><a href=""><img src="images/index/2316838.jpg" alt="보아(BoA)" /></a></li>
+								<li><a href=""><img src="images/index/2316830.jpg" alt="크레용팝" /></a></li>
+								<li><a href=""><img src="images/index/2316828.jpg" alt="버벌진트" /></a></li>
+								<li><a href=""><img src="images/index/2316706.jpg" alt="배치기" /></a></li>
+								<li><a href=""><img src="images/index/2316829.jpg" alt="박수진" /></a></li>
+								<li><a href=""><img src="images/index/2316758.jpg" alt="양희은" /></a></li>
+							</ul>
+							<ul class="albumList4">
+								<li><a href=""><img src="images/index/2316838.jpg" alt="보아(BoA)" /></a></li>
+								<li><a href=""><img src="images/index/2316830.jpg" alt="크레용팝" /></a></li>
+								<li><a href=""><img src="images/index/2316828.jpg" alt="버벌진트" /></a></li>
+								<li><a href=""><img src="images/index/2316706.jpg" alt="배치기" /></a></li>
+								<li><a href=""><img src="images/index/2316829.jpg" alt="박수진" /></a></li>
+								<li><a href=""><img src="images/index/2316758.jpg" alt="양희은" /></a></li>
+							</ul>
+							<ul class="albumList5">
+								<li><a href=""><img src="images/index/2316838.jpg" alt="보아(BoA)" /></a></li>
+								<li><a href=""><img src="images/index/2316830.jpg" alt="크레용팝" /></a></li>
+								<li><a href=""><img src="images/index/2316828.jpg" alt="버벌진트" /></a></li>
+								<li><a href=""><img src="images/index/2316706.jpg" alt="배치기" /></a></li>
+								<li><a href=""><img src="images/index/2316829.jpg" alt="박수진" /></a></li>
+								<li><a href=""><img src="images/index/2316758.jpg" alt="양희은" /></a></li>
+							</ul>
+
+							<!-- class="albumPop", class="albumOST", class="albumJpop",   -->
+						</div>
+						<div class="bannerBtn">
+							<a class="bannerBtn1" href="" title="이전 이벤트 보기">이전</a><a class="bannerBtn2" href="" title="다음 이벤트 보기">다음</a>
+						</div>
+					</div> <!-- newAlbum end -->
+
+
+					<div id="event">
+						<ul class="eventRoll">
+							<li><a href=""><img src="images/index/imgUrl20150430073821.jpg" alt="이나경" title="이나경"></a></li>
+							<li><a href=""><img src="images/index/imgUrl20150430073907.jpg" alt="스내키챈" title="처음 선보이는 한국어 랩 딸바보"></a></li>
+							<li><a href=""><img src="images/index/imgUrl20150430073940.jpg" alt="양희은" title="뜻밖의 만남 #4. 엄마가 딸에게"></a></li>
+							<li><a href=""><img src="images/index/imgUrl20150430074041.jpg" alt="Mumford&Sons" title="어쿠스틱 감성 신사들 [Wilder Mind]"></a></li>
+							<li><a href=""><img src="images/index/imgUrl20150430074114.jpg" alt="박수진" title="점핑걸 OST로 첫 자작곡 선보인다!"></a></li>
+							<li><a href=""><img src="images/index/imgUrl20150430074147.jpg" alt="버벌진트" title="음악감독, 버벌진트의 또 다른 변신!"></a></li>
+							<li><a href=""><img src="images/index/imgUrl20150430074214.jpg" alt="크레용팝" title="크레용 팝이 썸남에게 하는 말 뭐해?'"></a></li>
+						</ul>
+						<div class="rollingBtn">
+							<span><a href="">1번 이벤트</a></span>
+							<span><a href="">2번 이벤트</a></span>
+							<span><a href="">3번 이벤트</a></span>
+							<span><a href="">4번 이벤트</a></span>
+							<span><a href="">5번 이벤트</a></span>
+							<span><a href="">6번 이벤트</a></span>
+							<span><a href="" class="stopBtn">배너 멈춤</a></span>
+						</div>
+					</div>
+					<div id="loginBox">
+						<div class="logIn">
+							<form method="post" action="">
+							<fieldset>
+								<legend class="hidden"><label for="userId">로그인을 위한 아이디, 비밀번호 입력란</label></legend>
+									<input type="text" id="userId" name="userId" value="아이디" />
+									<input type="password" name="userPwd" id="userPwd" value="비밀번호"/>
+									<input type="button" class="loginIcon" name="loginIcon" title="로그인 버튼" />
+									<div class="loginBottom">
+										<input type="checkbox" class="idSave" name="idSave"  title="다음 로그인시에도 아이디 보이기" />아이디 저장
+										<span><a href="">아이디/비밀번호 찾기</a></span>
+										<span><a href=""><strong>회원가입</strong></a></span>
+									</div>
+							</fieldset>
+							</form>
+						</div>
+						<div class="promotion">
+							<a href=""><img src="images/index/imgUrl20150428111634.jpg" alt="장우영의 봄 추천 곡" title="장우영의 봄을 책임질 장우영의 추천 곡"></a>
+						</div>
+					</div>
+				
+				</div> <!-- contTop end -->
+
+				<div id="conMiddle">
+					<div id="hotCon">
+						<h2>
+							<span class="h2Theme">인기있어요</span>
+							<span class="h2Text">지금 이슈가 되는 아티스트의 인기 컨텐츠입니다.</span> 
+							<span class="listNum"><span class="hotListpresent">1</span>/<span class="hotListall">2</span></span>
+						</h2>
+						<div class="bannerBtn">
+							<a class="bannerBtn1" href="" title="이전 이벤트 보기">이전</a><a class="bannerBtn2" href="" title="다음 이벤트 보기">다음</a>
+						</div>
+						<ul>
+							<li>
+								<dl>
+									<dt><a href="" alt="버벌진트의 시작이 좋은" title="버벌진트의 멜론 TV보러가기"><img src="images/index/imgUrl20150504045349.jpg" alt="버벌진트의 시작이 좋은" title="버벌진트의 멜론 TV보러가기"></a></dt>
+									<dd><a href="" alt="버벌진트의 시작이 좋은" title="버벌진트의 멜론 TV보러가기"><strong>2015 시작이 좋은 버벌진트 Type!</strong><br />버벌진트 사실은 시크함 속 샤이가이!?</a></dd>
+									<dd><span class="muWrite"><a href="">멜론TV</a></span><span class="contNum">조회 48,040</span></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="" alt="새벽의 BGM" title="장엄하고 웅장한 새벽의 BGM 들으러 가기"><img src="images/index/imgUrl20150504045420.jpg" alt="새벽의 BGM" title="장엄하고 웅장한 새벽의 BGM 들으러 가기"></a></dt>
+									<dd><a href="" alt="새벽의 BGM" title="장엄하고 웅장한 새벽의 BGM 들으러 가기"><strong>긴장감이 끊이지 않는 새벽의 BGM</strong><br />장엄하고 웅장한 노래를 찾고 있나요?</a></dd>
+									<dd><span class="muWrite"><a href="">멜론DJ</a></span><span class="contNum">조회 32,763</span></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="" alt="히든트랙 5월 첫째 주 신보" title="5월 첫째 주 신보 들으러 가기"><img src="images/index/imgUrl20150504045442.jpg" alt="히든트랙 5월 첫째 주 신보" title="5월 첫째 주 신보 들으러 가기"></a></dt>
+									<dd><a href="" alt="히든트랙 5월 첫째 주 신보" title="5월 첫째 주 신보 들으러 가기"><strong>국내외 히든트랙 : 5월 첫째 주 신보</strong><br />섬세하고 드라마틱한 그들을 아시나요?</a></dd>
+									<dd><span class="muWrite"><a href="">뮤직스토리</a></span><span class="contNum">조회 4,945</span></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="" alt="운동만 하려니 지루한 당신을 위해" title="2시간 분량 운동을 위한 노래 들으러 가"><img src="images/index/imgUrl20150504045502.jpg" alt="운동만 하려니 지루한 당신을 위해" title="2시간 분량 운동을 위한 노래 들으러 가"></a></dt>
+									<dd><a href="" alt="운동만 하려니 지루한 당신을 위해" title="2시간 분량 운동을 위한 노래 들으러 가"><strong>운동만 하려니 지루했을 당신을 위해</strong><br />2시간 분량의 운동, 이 노래면 충분해...</a></dd>
+									<dd><span class="muWrite"><a href="">멜론DJ</a></span><span class="contNum">조회 24,609</span></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="" alt="몬스타엑스 티저 공개" title="끌리는 여자 티저 보러가기"><img src="images/index/imgUrl20150504045533.jpg" alt="몬스타엑스 티저 공개" title="끌리는 여자 티저 보러가기"></a></dt>
+									<dd><a href="" alt="몬스타엑스 티저 공개" title="끌리는 여자 티저 보러가기"><strong>몬스타엑스 '끌리는 여자' 티저 공개</strong><br />기현&주현 목소리도 여진구 목소리도(하트)</a></dd>
+									<dd><span class="muWrite"><a href="">멜론TV</a></span><span class="contNum">조회 46,973</span></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="" alt="드림웍스의 신작 OST" title="드림웍스 신작 '홈' OST 들으러 가기"><img src="images/index/imgUrl20150504045555.jpg" alt="드림웍스의 신작 OST" title="드림웍스 신작 '홈' OST 들으러 가기"></a></dt>
+									<dd><a href="" alt="드림웍스의 신작 OST" title="드림웍스 신작 '홈' OST 들으러 가기"><strong>드림웍스의 신작 '홈'을 빛내는  OST</strong><br />좋아요&응원 댓글 이벤트도 있어요 ^^</a></dd>
+									<dd><span class="muWrite"><a href="">뮤직스토리</a></span><span class="contNum">조회 2,156</span></dd>
+								</dl>
+							</li>
+						</ul>
+
+						<ul>
+							<li>
+								<dl>
+									<dt><a href="" alt="버벌진트의 시작이 좋은" title="버벌진트의 멜론 TV보러가기"><img src="images/index/imgUrl20150504045349.jpg" alt="버벌진트의 시작이 좋은" title="버벌진트의 멜론 TV보러가기"></a></dt>
+									<dd><a href="" alt="버벌진트의 시작이 좋은" title="버벌진트의 멜론 TV보러가기"><strong>2015 시작이 좋은 버벌진트 Type!</strong><br />버벌진트 사실은 시크함 속 샤이가이!?</a></dd>
+									<dd><span class="muWrite"><a href="">멜론TV</a></span><span class="contNum">조회 48,040</span></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="" alt="새벽의 BGM" title="장엄하고 웅장한 새벽의 BGM 들으러 가기"><img src="images/index/imgUrl20150504045420.jpg" alt="새벽의 BGM" title="장엄하고 웅장한 새벽의 BGM 들으러 가기"></a></dt>
+									<dd><a href="" alt="새벽의 BGM" title="장엄하고 웅장한 새벽의 BGM 들으러 가기"><strong>긴장감이 끊이지 않는 새벽의 BGM</strong><br />장엄하고 웅장한 노래를 찾고 있나요?</a></dd>
+									<dd><span class="muWrite"><a href="">멜론DJ</a></span><span class="contNum">조회 32,763</span></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="" alt="히든트랙 5월 첫째 주 신보" title="5월 첫째 주 신보 들으러 가기"><img src="images/index/imgUrl20150504045442.jpg" alt="히든트랙 5월 첫째 주 신보" title="5월 첫째 주 신보 들으러 가기"></a></dt>
+									<dd><a href="" alt="히든트랙 5월 첫째 주 신보" title="5월 첫째 주 신보 들으러 가기"><strong>국내외 히든트랙 : 5월 첫째 주 신보</strong><br />섬세하고 드라마틱한 그들을 아시나요?</a></dd>
+									<dd><span class="muWrite"><a href="">뮤직스토리</a></span><span class="contNum">조회 4,945</span></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="" alt="운동만 하려니 지루한 당신을 위해" title="2시간 분량 운동을 위한 노래 들으러 가"><img src="images/index/imgUrl20150504045502.jpg" alt="운동만 하려니 지루한 당신을 위해" title="2시간 분량 운동을 위한 노래 들으러 가"></a></dt>
+									<dd><a href="" alt="운동만 하려니 지루한 당신을 위해" title="2시간 분량 운동을 위한 노래 들으러 가"><strong>운동만 하려니 지루했을 당신을 위해</strong><br />2시간 분량의 운동, 이 노래면 충분해...</a></dd>
+									<dd><span class="muWrite"><a href="">멜론DJ</a></span><span class="contNum">조회 24,609</span></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="" alt="몬스타엑스 티저 공개" title="끌리는 여자 티저 보러가기"><img src="images/index/imgUrl20150504045533.jpg" alt="몬스타엑스 티저 공개" title="끌리는 여자 티저 보러가기"></a></dt>
+									<dd><a href="" alt="몬스타엑스 티저 공개" title="끌리는 여자 티저 보러가기"><strong>몬스타엑스 '끌리는 여자' 티저 공개</strong><br />기현&주현 목소리도 여진구 목소리도(하트)</a></dd>
+									<dd><span class="muWrite"><a href="">멜론TV</a></span><span class="contNum">조회 46,973</span></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="" alt="드림웍스의 신작 OST" title="드림웍스 신작 '홈' OST 들으러 가기"><img src="images/index/imgUrl20150504045555.jpg" alt="드림웍스의 신작 OST" title="드림웍스 신작 '홈' OST 들으러 가기"></a></dt>
+									<dd><a href="" alt="드림웍스의 신작 OST" title="드림웍스 신작 '홈' OST 들으러 가기"><strong>드림웍스의 신작 '홈'을 빛내는  OST</strong><br />좋아요&응원 댓글 이벤트도 있어요 ^^</a></dd>
+									<dd><span class="muWrite"><a href="">뮤직스토리</a></span><span class="contNum">조회 2,156</span></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>	 <!-- hotCon end -->
+					<div id="chartTab">
+						<h2><a href=""><span>멜론 차트</span></a></h2>
+						<div class="chartWrap">
+							<h3 class="tab1"><a href="" class="on"><span class="active">실시간</span></a></h3>
+							<p class="date first">2015년 6 26일 기준</p>
+							<div class="list">
+								<ol>
+									<li class="over">
+										<div>
+											<span class="rankNum1">1</span>
+											<span class="rankUp">순위 상승</span>
+											<span class="chartNum">0</span>
+											
+										</div>
+										<dl>
+											<dt><a href="">LOSER</a></dt>
+											<dd><a href=""><img src="images/index/198094_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">BIGBANG</a></dd>
+										</dl>
+									</li>
+									<li>
+										<div>
+											<span class="rankNum2">2</span>
+											<span class="rankNone">순위변동 없음</span>
+											<span class="chartNum">0</span>
+										</div>
+										<dl>
+											<dt><a href="">Who Are You (Feat...</a></dt>
+											<dd><a href=""><img src="images/index/261143_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">보아(BoA)</a></dd>
+										</dl>
+									</li>
+									<li>
+										<div>
+											<span class="rankNum3">3</span>
+											<span class="rankDown">순위 하락</span>
+											<span class="chartNum">2</span>
+										</div>
+										<dl>
+											<dt><a href="">BAEBAE</a></dt>
+											<dd><a href=""><img src="images/index/402526_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">BIGBANG</a></dd>
+										</dl>
+									</li>
+									<li>
+										<div>
+											<span class="rankNum4">4</span>
+											<span class="rankNone">순위변동 없음</span>
+											<span class="chartNum">0</span>
+										</div>
+										<dl>
+											<dt><a href="">Me You(Feat. 백예...</a></dt>
+											<dd><a href=""><img src="images/index/534360_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">San E</a></dd>
+										</dl>
+									</li>
+
+									<li>
+										<div>
+											<span class="rankNum5">5</span>
+											<span class="rankNone">순위변동 없음</span>
+											<span class="chartNum">0</span>
+										</div>
+										<dl>
+											<dt><a href="">어머님이 누구니 (F... </a></dt>
+											<dd><a href=""><img src="images/index/1191_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">박진영</a></dd>
+										</dl>
+									</li>
+									<li>
+										<div>
+											<span class="rankNum6">6</span>
+											<span class="rankNone">순위변동 없음</span>
+											<span class="chartNum">0</span>
+										</div>
+										<dl>
+											<dt><a href="">아예 (Ah Yeah)</a></dt>
+											<dd><a href=""><img src="images/index/672375_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">EXID</a></dd>
+										</dl>
+									</li>
+
+									<li>
+										<div>
+											<span class="rankNum7">7</span>
+											<span class="rankNone">순위변동 없음</span>
+											<span class="chartNum">0</span>
+										</div>
+										<dl>
+											<dt><a href="">다른 남자 말고 너</a></dt>
+											<dd><a href=""><img src="images/index/724619_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">미쓰에이</a></dd>
+										</dl>
+									</li>
+
+									<li>
+										<div>
+											<span class="rankNum8">8</span>
+											<span class="rankDown">순위하락</span>
+											<span class="chartNum">0</span>
+										</div>
+										<dl>
+											<dt><a href="">우연히 봄</a></dt>
+											<dd><a href=""><img src="images/index/630454_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">로꼬, 유주...</a></dd>
+										</dl>
+									</li>
+
+									<li>
+										<div>
+											<span class="rankNum9">9</span>
+											<span class="rankUp">순위상승</span>
+											<span class="chartNum">0</span>
+										</div>
+										<dl>
+											<dt><a href="">연애할래</a></dt>
+											<dd><a href=""><img src="images/index/175139_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">박보람</a></dd>
+										</dl>
+									</li>
+									<li>
+										<div>
+											<span class="rankNum10">10</span>
+											<span class="rankDown">순위하락</span>
+											<span class="chartNum">0</span>
+										</div>
+										<dl>
+											<dt><a href="">한번 더 말해줘(Fe...</a></dt>
+											<dd><a href=""><img src="images/index/672262_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">지누션</a></dd>
+										</dl>
+									</li>
+								</ol>
+								<div class="recom">
+									<span><a href="">추천</a>></span>
+									<dl>
+										<dt><a href="">GOD</a></dt>
+										<dd><a href="">지민 (A...</a></dd>
+									</dl>
+								</div> <!-- recom end -->
+								<p class="btnBottom">
+									<span class="allListen"><a href="">전체듣기</a></span>
+									<span class="topListen"><a href="">TOP10듣기</a></span>
+									<span class="chartMore"><a href="">더보기</a></span>
+								</p>
+							</div>
+
+							<h3 class="tab2"><a href=""><span>POP</span></a></h3>
+							<p class="date">2015년 6월 기준</p>
+							<div class="list">
+								<ol>
+									<li class="over">
+										<div>
+											<span class="rankNum1">1</span>
+											<span class="rankUp">순위 상승</span>
+											<span class="chartNum">0</span>
+											
+										</div>
+										<dl>
+											<dt><a href="">LOSER</a></dt>
+											<dd><a href=""><img src="images/index/1191_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">BIGBANG</a></dd>
+										</dl>
+									</li>
+									<li>
+										<div>
+											<span class="rankNum2">2</span>
+											<span class="rankNone">순위변동 없음</span>
+											<span class="chartNum">0</span>
+										</div>
+										<dl>
+											<dt><a href="">Who Are You (Feat...</a></dt>
+											<dd><a href=""><img src="images/index/1191_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">보아(BoA)</a></dd>
+										</dl>
+									</li>
+									<li>
+										<div>
+											<span class="rankNum3">3</span>
+											<span class="rankDown">순위 하락</span>
+											<span class="chartNum">2</span>
+										</div>
+										<dl>
+											<dt><a href="">BAEBAE</a></dt>
+											<dd><a href=""><img src="images/index/1191_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">BIGBANG</a></dd>
+										</dl>
+									</li>
+									<li>
+										<div>
+											<span class="rankNum4">4</span>
+											<span class="rankNone">순위변동 없음</span>
+											<span class="chartNum">0</span>
+										</div>
+										<dl>
+											<dt><a href="">Me You(Feat. 백예...</a></dt>
+											<dd><a href=""><img src="images/index/1191_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">San E</a></dd>
+										</dl>
+									</li>
+
+									<li>
+										<div>
+											<span class="rankNum5">5</span>
+											<span class="rankNone">순위변동 없음</span>
+											<span class="chartNum">0</span>
+										</div>
+										<dl>
+											<dt><a href="">어머님이 누구니 (F... </a></dt>
+											<dd><a href=""><img src="images/index/1191_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">박진영</a></dd>
+										</dl>
+									</li>
+									<li>
+										<div>
+											<span class="rankNum6">6</span>
+											<span class="rankNone">순위변동 없음</span>
+											<span class="chartNum">0</span>
+										</div>
+										<dl>
+											<dt><a href="">아예 (Ah Yeah)</a></dt>
+											<dd><a href=""><img src="images/index/1191_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">EXID</a></dd>
+										</dl>
+									</li>
+
+									<li>
+										<div>
+											<span class="rankNum7">7</span>
+											<span class="rankNone">순위변동 없음</span>
+											<span class="chartNum">0</span>
+										</div>
+										<dl>
+											<dt><a href="">다른 남자 말고 너</a></dt>
+											<dd><a href=""><img src="images/index/1191_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">미쓰에이</a></dd>
+										</dl>
+									</li>
+
+									<li>
+										<div>
+											<span class="rankNum8">8</span>
+											<span class="rankDown">순위하락</span>
+											<span class="chartNum">0</span>
+										</div>
+										<dl>
+											<dt><a href="">우연히 봄</a></dt>
+											<dd><a href=""><img src="images/index/1191_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">로꼬, 유주...</a></dd>
+										</dl>
+									</li>
+
+									<li>
+										<div>
+											<span class="rankNum9">9</span>
+											<span class="rankUp">순위상승</span>
+											<span class="chartNum">0</span>
+										</div>
+										<dl>
+											<dt><a href="">연애할래</a></dt>
+											<dd><a href=""><img src="images/index/1191_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">박보람</a></dd>
+										</dl>
+									</li>
+									<li>
+										<div>
+											<span class="rankNum10">10</span>
+											<span class="rankDown">순위하락</span>
+											<span class="chartNum">0</span>
+										</div>
+										<dl>
+											<dt><a href="">한번 더 말해줘(Fe...</a></dt>
+											<dd><a href=""><img src="images/index/1191_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">지누션</a></dd>
+										</dl>
+									</li>
+								</ol>
+								<div class="recom">
+									<span><a href="">추천</a>></span>
+									<dl>
+										<dt><a href="">GOD</a></dt>
+										<dd><a href="">지민 (A...</a></dd>
+									</dl>
+								</div> <!-- recom end -->
+								<p class="btnBottom">
+									<span class="allListen"><a href="">전체듣기</a></span>
+									<span class="topListen"><a href="">TOP10듣기</a></span>
+									<span class="chartMore"><a href="">더보기</a></span>
+								</p>
+							</div>
+
+							<h3 class="tab3"><a href=""><span>아티스트</span></a></h3>
+							<p class="date">최근 한 주 기준</p>
+							<div class="list">
+								<ol>
+									<li class="over">
+										<div>
+											<span class="rankNum1">1</span>
+											<span class="rankUp">순위 상승</span>
+											<span class="chartNum">0</span>
+											
+										</div>
+										<dl>
+											<dt><a href="">LOSER</a></dt>
+											<dd><a href=""><img src="images/index/1191_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">BIGBANG</a></dd>
+										</dl>
+									</li>
+									<li>
+										<div>
+											<span class="rankNum2">2</span>
+											<span class="rankNone">순위변동 없음</span>
+											<span class="chartNum">0</span>
+										</div>
+										<dl>
+											<dt><a href="">Who Are You (Feat...</a></dt>
+											<dd><a href=""><img src="images/index/1191_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">보아(BoA)</a></dd>
+										</dl>
+									</li>
+									<li>
+										<div>
+											<span class="rankNum3">3</span>
+											<span class="rankDown">순위 하락</span>
+											<span class="chartNum">2</span>
+										</div>
+										<dl>
+											<dt><a href="">BAEBAE</a></dt>
+											<dd><a href=""><img src="images/index/1191_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">BIGBANG</a></dd>
+										</dl>
+									</li>
+									<li>
+										<div>
+											<span class="rankNum4">4</span>
+											<span class="rankNone">순위변동 없음</span>
+											<span class="chartNum">0</span>
+										</div>
+										<dl>
+											<dt><a href="">Me You(Feat. 백예...</a></dt>
+											<dd><a href=""><img src="images/index/1191_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">San E</a></dd>
+										</dl>
+									</li>
+
+									<li>
+										<div>
+											<span class="rankNum5">5</span>
+											<span class="rankNone">순위변동 없음</span>
+											<span class="chartNum">0</span>
+										</div>
+										<dl>
+											<dt><a href="">어머님이 누구니 (F... </a></dt>
+											<dd><a href=""><img src="images/index/1191_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">박진영</a></dd>
+										</dl>
+									</li>
+									<li>
+										<div>
+											<span class="rankNum6">6</span>
+											<span class="rankNone">순위변동 없음</span>
+											<span class="chartNum">0</span>
+										</div>
+										<dl>
+											<dt><a href="">아예 (Ah Yeah)</a></dt>
+											<dd><a href=""><img src="images/index/1191_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">EXID</a></dd>
+										</dl>
+									</li>
+
+									<li>
+										<div>
+											<span class="rankNum7">7</span>
+											<span class="rankNone">순위변동 없음</span>
+											<span class="chartNum">0</span>
+										</div>
+										<dl>
+											<dt><a href="">다른 남자 말고 너</a></dt>
+											<dd><a href=""><img src="images/index/1191_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">미쓰에이</a></dd>
+										</dl>
+									</li>
+
+									<li>
+										<div>
+											<span class="rankNum8">8</span>
+											<span class="rankDown">순위하락</span>
+											<span class="chartNum">0</span>
+										</div>
+										<dl>
+											<dt><a href="">우연히 봄</a></dt>
+											<dd><a href=""><img src="images/index/1191_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">로꼬, 유주...</a></dd>
+										</dl>
+									</li>
+
+									<li>
+										<div>
+											<span class="rankNum9">9</span>
+											<span class="rankUp">순위상승</span>
+											<span class="chartNum">0</span>
+										</div>
+										<dl>
+											<dt><a href="">연애할래</a></dt>
+											<dd><a href=""><img src="images/index/1191_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">박보람</a></dd>
+										</dl>
+									</li>
+									<li>
+										<div>
+											<span class="rankNum10">10</span>
+											<span class="rankDown">순위하락</span>
+											<span class="chartNum">0</span>
+										</div>
+										<dl>
+											<dt><a href="">한번 더 말해줘(Fe...</a></dt>
+											<dd><a href=""><img src="images/index/1191_54.jpg" alt="앨범명" /></a></dd>
+											<dd><a href="">지누션</a></dd>
+										</dl>
+									</li>
+								</ol>
+								<div class="recom">
+									<span><a href="">추천</a>></span>
+									<dl>
+										<dt><a href="">GOD</a></dt>
+										<dd><a href="">지민 (A...</a></dd>
+									</dl>
+								</div> <!-- recom end -->
+								<p class="btnBottom">
+									<span class="allListen"><a href="">전체듣기</a></span>
+									<span class="topListen"><a href="">TOP10듣기</a></span>
+									<span class="chartMore"><a href="">더보기</a></span>
+								</p>
+							</div>
+							
+						</div>
+					</div> <!-- charttab end -->
+				
+				</div> <!-- conMiddle end -->
+
+				<div id="conBottom">
+					<div id="newCon">
+						<h2><span class="h2Text">새로 나왔어요</span><span class="contNumcout">78</span><span class="h2Textnormal">개의 아티스트 컨텐츠가 업로드 되었습니다</span></h2>
+						<p><span class="recentList"><a href="">최신순</a></span><span class="hotList"><a href="">인기순</a></span></p>
+						<div class="listWrap">
+							<ul class="recentList">
+								<li>
+									<dl>
+										<dt><span class="videoIcon"></span><span class="uploadTime">5분 전</span>
+											<span class="playliName"><a href="">Black Nine - survival of the titlest</a></span>
+											<span class="newartistname">Judgment Day</span></dt>
+										<dd><img src="images/index/80009210_120.jpg" alt="" /></dd>
+									</dl>
+								</li>
+								<li class="paddingNone">
+									<dl>
+										<dt><span class="videoIcon"></span><span class="uploadTime">21분 전</span>
+											<span class="playliName"><a href="">Jang Hyunseung(장현승) - 니가 처음이야 (Feat. 기리보이 ) MV..</a></span>
+											<span class="newartistname">장현승 (비 외 1명</span></dt>
+										<dd><img src="images/index/80009220_120.jpg" alt="" /></dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><span class="artistIcon"></span><span class="uploadTimeAr">3일 전</span>
+											<span class="playliName"><a href="">크리스티나 아길레라의 감성 추천 팝 음악 30!</a></span>
+											<span class="newartistname">Christina  Aguilera</span></dt>
+										<dd><img src="images/index/CAP_430873728142667_190.jpg" alt="" /></dd>
+									</dl>
+								</li>
+								<li class="paddingNone">
+									<dl>
+										<dt><span class="photoIcon"></span><span class="uploadTime">5월 5일</span>
+											<span class="playliName"><a href="">많이 궁금하셨었죠? 에이핑크 보미가 제 곡에 피처링을 해주었어요</a></span>
+											<span class="newartistname">데이비드 오</span></dt>
+										<dd><img src="images/index/80009260_120.jpg" alt="" /></dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><span class="videoIcon"></span><span class="uploadTime">5월 4일</span>
+											<span class="playliName"><a href="">파랑망또 ~ 자작곡 '미생' 들려드릴게요!!</a></span>
+											<span class="newartistname">파랑망또</span></dt>
+										<dd><img src="images/index/80009230_120.jpg" alt="" /></dd>
+									</dl>
+								</li>
+								<li class="paddingNone">
+									<dl>
+										<dt><span class="photoIcon"></span><span class="uploadTime">5월 4일</span>
+											<span class="playliName"><a href="">MONSTA X데뷔 앨범 개인 티저 화보 공개! 여섯번째 멤버_셔누! ..</a></span>
+											<span class="newartistname">몬스타엑스</span></dt>
+										<dd><img src="images/index/80009255_120.jpg" alt="" /></dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><span class="photoIcon"></span><span class="uploadTime">5월 5일</span>
+											<span class="playliName"><a href="">하트비의 키워드 인터뷰, '#hashtah(해시태그)'가 5월 6일 공개됩..</a></span>
+											<span class="newartistname">하트비</span></dt>
+										<dd><img src="images/index/80009169_120.jpg" alt="" /></dd>
+									</dl>
+								</li>
+								<li class="paddingNone">
+									<dl>
+										<dt><span class="photoIcon"></span><span class="uploadTime">5월 3일</span>
+											<span class="playliName"><a href="">D-2 옥상달빛 싱글앨범 [희한한 시대] -2015.05. 07 낮 12시..</a></span>
+											<span class="newartistname">옥상달빛</span></dt>
+										<dd><img src="images/index/80009252_120.jpg" alt="" /></dd>
+									</dl>
+								</li>
+							</ul>
+							
+
+
+							<ul class="hotList">
+								<li>
+									<dl>
+										<dt><span class="artistIcon"></span><span class="uploadTimeAr">3일 전</span>
+											<span class="playliName"><a href="">크리스티나 아길레라의 감성 추천 팝 음악 30!</a></span>
+											<span class="newartistname">Christina  Aguilera</span></dt>
+										<dd><img src="images/index/CAP_430873728142667_190.jpg" alt="" /></dd>
+									</dl>
+								</li>
+								<li class="paddingNone">
+									<dl>
+										<dt><span class="photoIcon"></span><span class="uploadTime">5월 5일</span>
+											<span class="playliName"><a href="">많이 궁금하셨었죠? 에이핑크 보미가 제 곡에 피처링을 해주었어요</a></span>
+											<span class="newartistname">데이비드 오</span></dt>
+										<dd><img src="images/index/80009260_120.jpg" alt="" /></dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><span class="videoIcon"></span><span class="uploadTime">5월 4일</span>
+											<span class="playliName"><a href="">파랑망또 ~ 자작곡 '미생' 들려드릴게요!!</a></span>
+											<span class="newartistname">파랑망또</span></dt>
+										<dd><img src="images/index/80009230_120.jpg" alt="" /></dd>
+									</dl>
+								</li>
+								<li class="paddingNone">
+									<dl>
+										<dt><span class="photoIcon"></span><span class="uploadTime">5월 4일</span>
+											<span class="playliName"><a href="">MONSTA X데뷔 앨범 개인 티저 화보 공개! 여섯번째 멤버_셔누! ..</a></span>
+											<span class="newartistname">몬스타엑스</span></dt>
+										<dd><img src="images/index/80009255_120.jpg" alt="" /></dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><span class="photoIcon"></span><span class="uploadTime">5월 5일</span>
+											<span class="playliName"><a href="">하트비의 키워드 인터뷰, '#hashtah(해시태그)'가 5월 6일 공개됩..</a></span>
+											<span class="newartistname">하트비</span></dt>
+										<dd><img src="images/index/80009169_120.jpg" alt="" /></dd>
+									</dl>
+								</li>
+								<li class="paddingNone">
+									<dl>
+										<dt><span class="photoIcon"></span><span class="uploadTime">5월 3일</span>
+											<span class="playliName"><a href="">D-2 옥상달빛 싱글앨범 [희한한 시대] -2015.05. 07 낮 12시..</a></span>
+											<span class="newartistname">옥상달빛</span></dt>
+										<dd><img src="images/index/80009252_120.jpg" alt="" /></dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><span class="videoIcon"></span><span class="uploadTime">5분 전</span>
+											<span class="playliName"><a href="">Black Nine - survival of the titlest</a></span>
+											<span class="newartistname">Judgment Day</span></dt>
+										<dd><img src="images/index/80009210_120.jpg" alt="" /></dd>
+									</dl>
+								</li>
+								<li class="paddingNone">
+									<dl>
+										<dt><span class="videoIcon"></span><span class="uploadTime">21분 전</span>
+											<span class="playliName"><a href="">Jang Hyunseung(장현승) - 니가 처음이야 (Feat. 기리보이 ) MV..</a></span>
+											<span class="newartistname">장현승 (비 외 1명</span></dt>
+										<dd><img src="images/index/80009220_120.jpg" alt="" /></dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="banner">
+						<h2>
+							<span class="h2Theme">이건 어때요?</span>
+							<span class="listNum"><span class="hotListpresent">1</span>/<span class="hotListall">2</span></span>
+						</h2>
+						<div class="bannerBtn">
+							<a class="bannerBtn1" href="" title="이전 이벤트 보기">이전</a><a class="bannerBtn2" href="" title="다음 이벤트 보기">다음</a>
+						</div>
+						<div class="bannerCon">
+							<dl>
+								<dt class="bannerHead1"><a href="">안녕? 마음 훈훈한 5월</a></dt>
+								<dd class="bannerList1">
+									<a href="">엄마의 사랑 담긴 집 밥이 그리워지고,<br />잊고 지낸 선생님과의 추억도 떠오르는 5월</a>
+								</dd>
+								<dd class="bannerPic1"><img src="images/index/imgUrl20150427044139.jpg" alt="" /></dd>
+							</dl>	
+							<dl>
+								<dt class="bannerHead"><a href="">5월 : 바쁠때 더 생각나</a></dt>
+								<dd class="bannerList">
+									<a href="">많이 먹어도 아쉬운<br />진짜 우리 엄마 집 밥</a>
+								</dd>
+								<dd class="bannerPic"><img src="images/index/imgUrl20150427042034.jpg" alt="" /></dd>
+							</dl>
+							<dl>
+								<dt class="bannerHead"><a href="">5월 : 선생님 사랑해요</a></dt>
+								<dd class="bannerList">
+									<a href="">역대급 인생 스승송<br />한스밴드를 기억해?</a>
+								</dd>
+								<dd class="bannerPic"><img src="images/index/imgUrl20150504050320.jpg" alt="" /></dd>
+							</dl>
+							<dl class="bannerLast">
+								<dt class="bannerHead"><a href="">5월 : 다가오는 결혼시즌</a></dt>
+								<dd class="bannerList">
+									<a href="">행복한 가정의 첫 시작<br />기분 좋게 시작해야죠~</a>
+								</dd>
+								<dd class="bannerPic"><img src="images/index/imgUrl20150427042129.jpg" alt="" /></dd>
+							</dl>
+						</div>
+					</div>
+				
+				</div> <!-- contBottom end -->
+				<div id="notice">
+					<p><span class="noticeTitle">공지사항</span><span class="noticeCon">구글 크롬 업데이트 후 프로그램 설치 팝업 관련 안내</span><span class="date">2015. 04. 24</span></p>
+				</div>
+			</div>
+
+			<!-- container end -->
+
+
+
+			<!-- footer -->
+
+
+			<div id="footer">
+				
+				<ul class="footerList">
+					<li class="footerLis1"><a href="">회사소개</a></li>
+					<li><a href="">이용약관</a></li>
+					<li><a href=""><strong>개인정보취급방침</strong></a></li>
+					<li><a href="">청소년보호정책</a></li>
+					<li><a href="">제휴/프로모션문의</a></li>
+					<li><a href="">이메일주소무단수집거부</a></li>
+					<li><a href="">고객센터</a></li>
+					<li><a href="">파트너센터</a></li>
+				</ul>
+			
+				
+				<p>
+					<span class="pSpanfist">서울시 강남구 테헤란로 103길 17 정석빌딩</span><span>대표이사 : 신원수</span><span>사업자등록번호 :  123-13-456789</span>
+					<span>통신판매업 신고번호 : 제2011-서울강남-02008호</span>
+					<span class="pSpanfist">문의전화(평일 09:00~18:00) : 1566-7727(유료)</span><span>&copy; LOEN Entertainment, Inc. All rights reserved</span>
+				</p>
+				
+
+				
+				<ul class="footerBanner">
+					<li><a href=""><img src="images/common/ban_footer01_150210.png" alt="2015 대한민국 퍼스트브랜드 대상" title="2015 대한민국 퍼스트브랜드 대상" /></a></li>
+					<li><a href=""><img src="images/common/ban_footer02_150324.png" alt="한국능률협회컨설팅 2015브랜드 파워 1위" title="한국능률협회컨설팅 2015브랜드 파워 1위" /></a></li>
+					<li><a href=""><img src="images/common/ban_footer04_150210.png" alt="2015 가장 신뢰하는 브랜드 대상" title="2015 가장 신뢰하는 브랜드 대상" /></a></li>
+					<li><a href=""><img src="images/common/ban_footer08.png" alt="2014 국가 브랜드 대상" title="2014 국가 브랜드 대상" /></a></li>
+					<li><a href=""><img src="images/common/ban_footer06.png" alt="음악저작권 이용허락 인증" title="음악저작권 이용허락 인증" /></a></li>
+					<li><a href=""><img src="images/common/ban_footer07.png" alt="클린사이트" title="클린사이트"/></a></li>
+					<li><a href=""><img src="images/common/ban_footer09.png" alt="정보보호 관리체계 ISMS 인증" title="정보보호 관리체계 ISMS 인증" /></a></li>
+				</ul>
+
+			</div>
+
+			<!-- footer end -->
+
+			<div class="quick">
+				<dl>
+					<dt><a href="../index.html" alt="포트폴리오 바로가기" ><img src="images/common/portfolio_logo.png" alt="포트폴리오 바로가기" /></dt>
+					<dd>
+						<ul>
+							<li><a class="on" href="index.html">Melon_Main</a></li>
+							<li><a href="chart.html">Melon_chart</a></li>
+							<li><a href="member.html">Melon_member</a></li>
+							<li><a href="weekly.html">Melon_weekly</a></li>
+							<!-- <li><a href="artplust.html">Melon_artplust</a></li> -->
+						</ul>
+					</dd>
+				</dl>	
+			</div><!--//quickmenu -->
+			
+		</div>  <!-- wrap end -->
+		
+	</body>
+</html>

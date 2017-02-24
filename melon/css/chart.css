@@ -1,0 +1,572 @@
+@charset "utf-8";
+
+
+#wrap {
+	position:relative;
+}
+
+	
+	/* header subMenu */
+
+	#header div#MenuNav {
+		width:100%;
+		position:relative;
+	}
+	#header div.subMenu {
+		width:100%;
+		position:absolute;
+		top:45px;
+	}
+	#header div.subMenu ul.subMenu1 li {
+		padding-right:13px;
+		padding-left:13px;
+		padding-top:7px;
+		background:url('../images/common/bg_gray_line03.png') no-repeat right 80%;
+	}
+
+	#header div.subMenu ul.subMenu1 li.subMenu1Li5 {
+		background:none;
+	}
+
+	#header div.subMenu ul.subMenu1 li a {
+		display:inline-block;
+		font-size:0;
+		height:17px;
+		background:no-repeat
+	}
+
+	#header div.subMenu ul.subMenu1 li.subMenu1Li1 a {
+		width:71px;
+		background:url('../images/common/bg_menu_sub_150217.png') 873px 579px;
+	}
+
+	#header div.subMenu ul.subMenu1 li.subMenu1Li1 a:hover {
+		width:71px;
+		background:url('../images/common/bg_menu_sub_150217.png') 873px 579px;
+	}
+
+	#header div.subMenu ul.subMenu1 li.subMenu1Li2 a {
+		width:62px;
+		background:url('../images/common/bg_menu_sub_150217.png') 778px 0px;
+	}
+
+	#header div.subMenu ul.subMenu1 li.subMenu1Li2 a:active {
+		width:62px;
+		background:url('../images/common/bg_menu_sub_150217.png') 778px 579px;
+	}
+
+	#header div.subMenu ul.subMenu1 li.subMenu1Li2 a:hover {
+		width:62px;
+		background:url('../images/common/bg_menu_sub_150217.png') 778px 579px;
+	}
+
+	#header div.subMenu ul.subMenu1 li.subMenu1Li3 a {
+		width:62px;
+		background:url('../images/common/bg_menu_sub_150217.png') 691px 0px;
+	}
+
+	#header div.subMenu ul.subMenu1 li.subMenu1Li3 a:active {
+		width:62px;
+		background:url('../images/common/bg_menu_sub_150217.png') 691px 579px;
+	}
+
+	#header div.subMenu ul.subMenu1 li.subMenu1Li3 a:hover {
+		width:62px;
+		background:url('../images/common/bg_menu_sub_150217.png') 691px 579px;
+	}
+	#header div.subMenu ul.subMenu1 li.subMenu1Li4 a {
+		width:89px;
+		background:url('../images/common/bg_menu_sub_150217.png') 605px 0px;
+	}
+
+	#header div.subMenu ul.subMenu1 li.subMenu1Li4 a:active {
+		width:89px;
+		background:url('../images/common/bg_menu_sub_150217.png') 605px 579px;
+	}
+
+	#header div.subMenu ul.subMenu1 li.subMenu1Li4 a:hover {
+		width:89px;
+		background:url('../images/common/bg_menu_sub_150217.png') 605px 579px;
+	}
+
+	#header div.subMenu ul.subMenu1 li.subMenu1Li5 a {
+		width:60px;
+		background:url('../images/common/bg_menu_sub_150217.png') 492px 0px;
+	}
+
+	#header div.subMenu ul.subMenu1 li.subMenu1Li5 a:active {
+		width:60px;
+		background:url('../images/common/bg_menu_sub_150217.png') 492px 579px;
+	}
+
+	#header div.subMenu ul.subMenu1 li.subMenu1Li5 a:hover {
+		width:60px;
+		background:url('../images/common/bg_menu_sub_150217.png') 492px 579px;
+	}
+	
+	#header div.subMenu p.subBtn1 {
+		position:absolute;
+		top:3px;
+		right:2px;
+
+	}
+	#header div.subMenu p.subBtn1 a {
+		display:inline-block;
+		font-size:0;
+		height:22px;
+		width:81px;
+		background:no-repeat
+	}
+
+
+
+	#header div.subMenu p.subBtn1 a {
+		background:url('../images/common/bg_menu_sub_150217.png') 873px 99px;
+	}
+
+	#header div.subMenu p.subBtn1 a:hover {
+		background:url('../images/common/bg_menu_sub_150217.png') 873px 69px;
+	}
+
+	#header div.subMenu p.subBtn1 a:active {
+		background:url('../images/common/bg_menu_sub_150217.png') 873px 39px;
+	}
+
+
+
+	/* container */
+
+	#container {
+		width:1009px;
+		margin:0 auto;
+	}
+		h2 {
+			height:30px;
+			padding-top:25px;
+			font-size:22px;
+			font-family:Malgun Gothic;
+			color:#000;
+		}
+			
+		
+
+		
+			ul.melChart {
+				width:100%;
+				height:38px;
+				border-top:2px solid #848484;
+				border-bottom:1px solid #dbdbdb;
+				margin-bottom:24px;
+				background:#ebf0ed;
+			}
+
+			ul.melChart li {
+				float:left;
+				padding:10px 84px 10px;
+				border-right:1px solid #dbdbdb;
+				border-left:1px solid #fff;
+			}
+			ul.melChart li.melChart5 {
+				border-right:none;
+			}
+			#musicChart {
+			
+			}
+
+			#musicInfo {
+			
+			}
+		
+		#conBottom {
+			
+		}
+
+			/* musicBtn */
+
+			#conBottom div.musicBtn {
+				padding-top:7px;
+				padding-bottom:7px;
+				border-bottom: 1px solid #ccc;
+			}
+
+				div.musicBtn span.allSelect {
+					display:inline-block;
+					width:65px;
+					height:26px;
+					margin-right:5px;
+					letter-spacing: -1px;
+					background:url('../images/index/bg_btn_base.png') 0px 366px;
+				}
+				div.musicBtn span.allSelect a {
+					display:inline-block;
+					width:49px;
+					height:26px;
+					padding-top:5px;
+					margin-left:19px;
+					text-decoration:none;
+					font-size:11px;
+					background:url('../images/index/bg_btn_base.png') 49px 365px;
+					
+				}
+
+				div.musicBtn span.listen {
+					display:inline-block;
+					width:49px;
+					height:26px;
+					margin-right:5px;
+					letter-spacing: -1px;
+					background:url('../images/index/bg_btn_base.png') 0px 335px;
+				}
+				
+				div.musicBtn span.listen a {
+					display:inline-block;
+					width:30px;
+					height:26px;
+					padding-top:5px;
+					margin-left:19px;
+					text-decoration:none;
+					font-size:11px;
+					background:url('../images/index/bg_btn_base.png') 30px 365px;
+					
+				}
+
+
+				div.musicBtn span.musicDown {
+					display:inline-block;
+					width:49px;
+					height:26px;
+					margin-right:5px;
+					letter-spacing: -1px;
+					background:url('../images/index/bg_btn_base.png') 0px 304px;
+				}
+				
+				div.musicBtn span.musicDown a {
+					display:inline-block;
+					width:30px;
+					height:26px;
+					padding-top:5px;
+					margin-left:19px;
+					text-decoration:none;
+					font-size:11px;
+					background:url('../images/index/bg_btn_base.png') 30px 365px;
+					
+				}
+
+				div.musicBtn span.musicAdd {
+					display:inline-block;
+					width:49px;
+					height:26px;
+					margin-right:5px;
+					letter-spacing: -1px;
+					background:url('../images/index/bg_btn_base.png') 0px 273px;
+				}
+				
+				div.musicBtn span.musicAdd a {
+					display:inline-block;
+					width:30px;
+					height:26px;
+					padding-top:5px;
+					margin-left:19px;
+					text-decoration:none;
+					font-size:11px;
+					background:url('../images/index/bg_btn_base.png') 30px 365px;
+					
+				}
+
+				div.musicBtn span.musicGift {
+					display:inline-block;
+					width:49px;
+					height:26px;
+					margin-right:5px;
+					letter-spacing: -1px;
+					background:url('../images/index/bg_btn_base.png') 0px 242px;
+				}
+				
+				div.musicBtn span.musicGift a {
+					display:inline-block;
+					width:30px;
+					height:26px;
+					padding-top:5px;
+					margin-left:19px;
+					text-decoration:none;
+					font-size:11px;
+					background:url('../images/index/bg_btn_base.png') 30px 365px;
+					
+				}
+
+				div.musicBtn span.topListen {
+					display:inline-block;
+					width:89px;
+					height:26px;
+					margin-right:5px;
+					letter-spacing: -1px;
+					word-spacing: -1px;
+					background:url('../images/index/bg_btn_base.png') 0px 335px;
+				}
+				
+				div.musicBtn span.topListen a {
+					display:inline-block;
+					width:70px;
+					height:26px;
+					padding-top:5px;
+					margin-left:19px;
+					text-decoration:none;
+					font-size:11px;
+					background:url('../images/index/bg_btn_base.png') 70px 365px;
+					
+				}
+
+
+			/* chartTable */
+				#chartTable table {
+					width:100%;
+				}
+
+				#chartTable table thead th {
+					padding:7px 0;
+					color:#6ea300;
+					border-bottom:2px solid #80ba00;
+				}
+
+				#chartTable table thead th.tableTd1 {
+					width:46px;
+				}
+
+				#chartTable table thead th.tableTd2 {
+					width:71px;
+				}
+
+				#chartTable table thead th.tableTd3 {
+					width:153px;
+				}
+
+				#chartTable table thead th.tableTd4 {
+					width:542px;
+				}
+
+				#chartTable table thead th.tableTd5 {
+					width:94px;
+				}
+
+				#chartTable table thead th.tableTd6 {
+					width:102px;
+				}
+
+				#chartTable table tbody td {
+					padding:4px 0;
+					border-bottom:1px solid #e6e6e6;
+				}
+
+
+				#chartTable table tbody td input#musicSelect {
+					margin-left:17px;
+				}
+
+				#chartTable table tbody td span.muPromotion {
+					display:inline-block;
+					width:33px;
+					height:16px;
+					font-size:0;
+					background:url('../images/chart/icon_main.png') 300px 631px;
+				}
+
+				#chartTable table tbody td span.chartRank {
+					font-size:15px;
+					font-weight:bold;
+					color:#939897;
+				}
+
+				#chartTable table tbody td span.musicName {
+					font-weight:bold;
+					color:#666666;
+				}
+				#chartTable table tbody td span.albumName {
+					color:#777777;
+				}
+				#chartTable table tbody td span.chartRanktop {
+					font-size:15px;
+					font-weight:bold;
+					color:#fe473f;
+				}
+
+
+				#chartTable table tbody td span.rankNone {
+					display:inline-block;
+					width:7px;
+					height:7px;
+					margin-left:14px;
+					font-size:0;
+					background:url('../images/chart/bg_sprite_rank.png') 66px 0px;
+				}
+
+				#chartTable table tbody td span.rankUp {
+					display:inline-block;
+					width:7px;
+					height:7px;
+					margin-left:14px;
+					font-size:0;
+					background:url('../images/chart/bg_sprite_rank.png') 8px 0px;
+				}
+				#chartTable table tbody td span.rankDown {
+					display:inline-block;
+					width:7px;
+					height:7px;
+					margin-left:14px;
+					font-size:0;
+					background:url('../images/chart/bg_sprite_rank.png') 18px 0px;
+				}
+				
+				#chartTable table tbody td span.num {
+					padding-left:3px;
+					font-size:11px;
+					color:#999999;
+				}
+
+				#chartTable table tbody td span.numUp {
+					padding-left:3px;
+					color:#fe473f;
+				}
+
+				#chartTable table tbody td span.numDown {
+					padding-left:3px;
+					color:#46bda7;
+				}
+				
+
+				#chartTable table tbody td input.playBtn {
+					width:23px;
+					height:23px;
+					margin-top:16px;
+					margin-left:16px;
+					border:none 0;
+					background:url('../images/chart/bg_sprite_green.png') 632px 0;
+				}
+				#chartTable table tbody td input.addBtn {
+					width:23px;
+					height:23px;
+					margin-top:16px;
+					border:none 0;
+					background:url('../images/chart/bg_sprite_gray.png') 864px 0px;
+				}
+				#chartTable table tbody td span.musicInfo {
+					display:inline-block;
+					width:13px;
+					margin-top:20px;
+					margin-left:12px;
+					height:30px;
+					font-size:0;
+					background:url('../images/chart/bg_sprite_gray.png') 1274px 0;
+				}
+
+				#chartTable table tbody td span.artistName {
+					display:inline-block;
+					padding-right:8px;
+					color:#81a376;
+					background:url('../images/chart/bg_gray_line.png') no-repeat right 40%
+				}
+				#chartTable table tbody td div.chartalbumInfo {
+					padding-left:13px;
+				}
+
+				#chartTable table tbody td span.likeCount {
+					display:inline-block;
+					margin-left:20px;
+				}
+				#chartTable table tbody td input.likeBtn {
+					width:20px;
+					height:20px;
+					border:none;
+					margin-right:5px;
+					background:url('../images/chart/bg_sprite_gray.png') 936px 0;
+				}
+
+				#chartTable table tbody td a.MuVideo {
+					display:inline-block;
+					width:24px;
+					height:24px;
+					margin-left:7px;
+					font-size:0;
+					background:url('../images/chart/bg_sprite_gray.png') 1773px 0;
+				}
+
+				#chartTable table tbody td a:hover.MuVideo {
+					display:inline-block;
+					width:24px;
+					height:24px;
+					margin-left:7px;
+					font-size:0;
+					background:url('../images/chart/bg_sprite_green.png') 801px 1px;
+				}
+
+
+				#chartTable table tbody td a.MuDown {
+					display:inline-block;
+					width:24px;
+					height:24px;
+					margin-left:7px;
+					font-size:0;
+					background:url('../images/chart/bg_sprite_gray.png') 1717px 0;
+				}
+
+				#chartTable table tbody td a:hover.MuDown {
+					display:inline-block;
+					width:24px;
+					height:24px;
+					margin-left:7px;
+					font-size:0;
+					background:url('../images/chart/bg_sprite_green.png') 745px 1px;
+				}
+
+				#chartTable table tbody td a.MuSound {
+					display:inline-block;
+					width:24px;
+					height:24px;
+					margin-left:7px;
+					font-size:0;
+					background:url('../images/chart/bg_sprite_gray.png') 1745px 0;
+				}
+				
+				#chartTable table tbody td a:hover.MuSound {
+					display:inline-block;
+					width:24px;
+					height:24px;
+					margin-left:7px;
+					font-size:0;
+					background:url('../images/chart/bg_sprite_green.png') 773px 1px;
+				}
+				
+				#conBottom p.chartPage {
+					width:100%;
+					padding-top:27px;
+					margin-bottom:94px;
+					text-align:center;
+					
+				}
+				#conBottom p.chartPage a {
+					text-decoration:none;
+					font-weight:bold;
+					font-size:13px;
+					font-family:Malgun Gothic;
+					color:#80ba17;
+				}
+				#conBottom p.topmoveBtn {
+					position:absolute;
+					top:89%;
+					right:15%;
+				}
+				#conBottom p.topmoveBtn a {
+					display:inline-block;
+					width:37px;
+					height:37px;
+					font-size:0;
+					background:url('../images/chart/btn_top.png') 0px 0px;
+				}
+
+				#conBottom p.topmoveBtn a:hover {
+					display:inline-block;
+					width:37px;
+					height:37px;
+					font-size:0;
+					background:url('../images/chart/btn_top.png') 0px 37px;
+				}
+			

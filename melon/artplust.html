@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+Transitional//EN""http://www.w3.org/TR/xhtml1/
+DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<title>아티스트+>투데이>멜론</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="css/artplus.css" />
+		<link rel="stylesheet" type="text/css" href="css/quick.css" />
+		<style type="text/css">
+
+			
+		</style>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+		<script type="text/javascript" src="js/quick.js"></script>
+		<script type="text/javascript">
+			//<![CDATA[
+					
+				$(document).ready(function(){
+
+				//topBanner
+					timerStart();
+
+				//호출해서 실행 할 함수 작성
+					function slide(){
+						$(".topBanner ul:not(:animated)").stop().animate({marginLeft:"-=280px"},300,function(){
+							$(".topBanner ul").css("marginLeft","0");
+							$(".topBanner ul li:first").appendTo($(".topBanner ul"));
+						});
+					};
+
+				//topChart
+					function chartRolling(){
+						$("#topChart ol:not(:animated)").stop().animate({marginTop:"-=15px"},1000,function(){
+							$("#topChart ol").css("marginTop","0");
+							$("#topChart ol li:first").appendTo($("#topChart ol"));
+						});
+					};
+
+					function eventRolling(){
+						$("#event ul:not(:animated)").stop().animate({marginLeft:"-=236px"},1000,function(){
+							$("#event ul").css("marginLeft","0");
+							$("#event ul li:first").appendTo($("#event ul"));
+						});
+					};
+
+
+				//자동 타이머 실행
+					function timerStart(){
+						auto1 = setInterval(function(){
+							slide()
+							eventRolling()
+							
+						},5000);
+						auto2 = setInterval(function(){
+							chartRolling()
+						},3000);
+					}
+				//자동 타이머 (정지)
+					function timerStop(){
+						clearInterval(auto1);
+						clearInterval(auto2);
+					}
+
+
+					$(".bannerBtn1").click(function(){
+						$(".topBanner ul").stop().animate({marginLeft:"-560px"},300,function(){
+							$(".topBanner ul").css("marginLeft","-280px");
+							$(".topBanner ul li:first").appendTo($(".topBanner ul"));
+						});
+						return false;
+					});
+					
+
+					$(".bannerBtn2").click(function(){
+						$(".topBanner ul").stop().animate({marginLeft:"0"},300,function(){
+							$(".topBanner ul").css("marginLeft","-280px");
+							$(".topBanner ul li:last").prependTo($(".topBanner ul"));
+						});
+						return false;
+					});
+
+					
+
+				});
+			//]]>
+		</script>
+	</head>
+
+	<body>
+		<div id="wrap">
+
+			<!-- header -->
+		
+			<div class="headBg">
+				
+		
+				<div id="header">
+					<h1><a href=""><img src="images/common/logo_melon.png" alt="Melon 로고" title="Melon 로고 - 홈으로 이동" /></a></h1>
+					<div id="MenuNav">
+						<h2 class="hidden">주메뉴</h2>
+							<ul class="mainMenu">
+								<li class="menuList1"><a href=""><strong>멜론차트</strong></a></li>
+								<li class="menuList2"><a href="">최신음악</a></li>
+								<li class="menuList3"><a href="">장르음악</a></li>
+								<li class="menuList4"><a href="">멜론 DJ</a></li>
+								<li class="menuList5"><a href="">멜론 TV</a></li>
+								<li class="menuList6"><a href="">아티스트 +</a></li>
+								<li class="menuList7"><a href="">뮤직스토리</a></li>
+								<li class="menuList8"><a href="">더보기</a></li>
+								<li class="menuList9"><a href="">마이뮤직</a></li>
+								<li class="menuList10"><a href="">소식</a></li>
+							</ul>
+						<div class="subMenu">
+							<ul class="subMenu6">
+								<li class="subMenu6Li1"><a href="">투데이</a></li>
+								<li class="subMenu6Li2"><a href="">아티스트 랭킹</a></li>
+								<li class="subMenu6Li3"><a href="">인기가요 투표</a></li>
+							</ul>
+							<p class="subBtn2"><a href="">팬 맺은 아티스트</a></p>
+							<p class="subBtn3"><a href="">아티스트 파인더</a></p>
+						</div>
+					</div>
+
+						<!-- search field -->
+					<form method="post" action="">
+						<fieldset>
+							<legend class="hidden"><label for="musicSearch">통합검색(곡명, 앨범명, 아티스트명을 입력하세요)</label></legend>
+								<input type="text" id="musicSearch" name="musicSearch" size="30" />
+								<input type="button" class="autoSearch" name="autoSearch" title="자동검색 펼침" />
+								<input type="button" class="searchIcon" name="searchIcon" title="검색" />
+						</fieldset>
+					</form>
+
+					<div id="topChart">
+						<ol class="topChartlist">
+							<li><span class="topNum">1.</span><span class="artistName"><a href="">Maroon 5</a></span><span class="rankUp">순위상승</span><span class="num">4</span></li>
+							<li><span class="topNum">2.</span><span class="artistName"><a href="">다이나믹 듀오</a></span><span class="rankUp">순위상승</span><span class="num">7</span></li>
+							<li><span class="topNum">3.</span><span class="artistName"><a href="">지드래곤(G-Dr...</a></span><span class="rankUp">순위상승</span><span class="num">9</span></li>
+							<li><span class="topNum">4.</span><span class="artistName"><a href="">다비치</a></span><span class="rankUp">순위상승</span><span class="num">5</span></li>
+							<li><span class="normalNum">5.</span><span class="artistName"><a href="">허각</a></span><span class="rankUp">순위상승</span><span class="num">5</span></li>
+							<li><span class="normalNum">6.</span><span class="artistName"><a href="">어머님 은혜</a></span><span class="rankUp">순위상승</span><span class="num">95</span></li>
+							<li><span class="normalNum">7.</span><span class="artistName"><a href="">1월부터 6월까지</a></span><span class="rankUp">순위상승</span><span class="num">10</span></li>
+							<li><span class="normalNum">8.</span><span class="artistName"><a href="">뽀롱뽀롱 뽀로로</a></span><span class="rankUp">순위상승</span><span class="num">164</span></li>
+							<li><span class="normalNum">9.</span><span class="artistName"><a href="">후아유 OST</a></span><span class="rankUp">순위상승</span><span class="num">55</span></li>
+							<li><span class="normalNum">10.</span><span class="artistLast"><a href="">신화</a></span><span class="rankUp">순위상승</span><span class="num">156</span></li>
+						</ol>
+						<p class="more"><a href="">더보기</a><p>
+					</div>
+					
+
+
+					<ul class="topMenuL">
+						<li class="topMenuL1"><a href="">멜론 플레이어</a></li>
+						<li class="topMenuL2"><a href="">멜론모바일</a></li>
+						<li class="topMenuL3"><a href="">Altalk</a></li>
+						<li class="topMenuL4"><a href="">멜론뮤직어워드</a></li>
+					</ul>
+					<ul class="topMenuR">
+						<li class="topMenuR1"><a href="">이용권구매</a></li>
+						<li class="topMenuR2"><a href="">VIP 혜택관</a></li>
+						<li class="topMenuR3"><a href="">멜론캐쉬충전</a></li>
+						<li class="topMenuR4"><a href="">이벤트</a></li>
+						<li class="topMenuR5"><a href="">고객센터</a></li>
+					</ul>
+					
+					<div class="topBanner">
+						<ul>
+							<li><a href=""><img src="images/common/imgUrl20150430063339.jpg" alt="멜론 이벤트 배너1" title="멜론과 피트니스룸 VIP혜택관" /></a></li>
+							<li><a href=""><img src="images/common/imgUrl20150401105516.jpg" alt="멜론 이벤트 배너2" title="MelOn Event 3개월간의 파격적인 할인" /></a></li>
+							<li><a href=""><img src="images/common/imgUrl20150430062853.jpg" alt="멜론 이벤트 배너3" title="상남자로 돌아온 투포케이[오늘 예쁘네]" /></a></li>
+						</ul> 
+					</div>
+					<div class="bannerBtn">
+						<a class="bannerBtn1" href="" title="이전 이벤트 보기">이전</a><a class="bannerBtn2" href="" title="다음 이벤트 보기">다음</a>
+					</div>
+				</div>
+			</div><!-- headBg end -->
+
+			
+
+			<div id="container">
+				<div id="conTop">
+					<h2>
+						<span class="conTitle">투데이</span>
+						<span class="titleText">신규 앨범부터 아티스트가 직접 선곡한 플레이리스트까지! 아티스트들의 최신 소식을 실시간으로 확인하세요.</span>
+					</h2>
+					<div class="conWrap">
+						<div class="todayVideo">
+							<h3>인기 영상</h3>
+							<div class="todayVideoclip">
+								<dl>
+									<dt class="videoInfo">
+										<span class="videoSong">LOSER</span>&nbsp;<span class="videoArtist">BIGBANG</span><br />
+										<span class="videolikeCount">5,667</span>조회<span class="videoveiwCount">936,494</span>
+									</dt>
+									<dd><a href=""><img src="images/artplus/btn_play02.png" alt="" /></a></dd>
+								</dl>
+								<dl class="dlLast">
+									<dt class="videoInfo">
+										<span class="videoSong">BAEBAE</span>&nbsp;<span class="videoArtist">BIGBANG</span><br />
+										<span class="videolikeCount">3,354</span>조회<span class="videoveiwCount">736,318</span>
+									</dt>
+									<dd><a href=""><img src="images/artplus/50135270_480.jpg" alt="" /></a></dd>
+								</dl>
+							</div>
+						</div>
+						<div class="todayPhoto">
+							<h3>인기 포토</h3>
+							<div class="todayPhotoclip">
+								<dl>
+									<dt class="photoInfo">
+										<span class="photoArtist">김성규</span><br />
+										<span class="photolikeCount">5,667</span>조회<span class="photoveiwCount">70,480</span>
+									</dt>
+									<dd><a href=""><img src="images/artplus/80009079.jpg" alt="" /></a></dd>
+								</dl>
+								<dl>
+									<dt class="photoInfo">
+										<span class="photoArtist">김성규</span><br />
+										<span class="photolikeCount">3,354</span>조회<span class="photoveiwCount">160,921</span>
+									</dt>
+									<dd><a href=""><img src="images/artplus/80009080.jpg" alt="" /></a></dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+					
+				
+				</div> <!-- contTop end -->
+
+				<div id="conBottom">
+					<div class="todayFeed">
+						<h2>오늘의 업데이트</h2>
+						<p class="feedCategory"><span class="recentList"><a href="">최신순</a></span><span class="hotList"><a href="">인기순</a></span></p>
+						<ul class="feedList">
+							<li class="listAll"><a href="">전체</a></li>
+							<li class="listVideo"><a href="">영상</a></li>
+							<li class="listPhoto"><a href="">포토</a></li>
+							<li class="listConcert"><a href="">공연</a></li>
+							<li class="listPlay"><a href="">플레이리스트</a></li>
+						</ul>
+						<div class="feedWrap">
+							<div class="feedBox1">
+								<div class="boxPic">
+									
+								</div>
+								<div class="boxCon">
+									<span class="">오전 10시 39분</span>
+									<span class="">현재</span>
+									<span class="">545개 <br />아티스트 컨텐츠가<br /> 업데이트 되었습니다.</span>
+								</div>
+								<div class="boxBottom">
+									
+								</div>	
+							</div>
+
+
+
+							<div class="feedBox2">
+								<div class="boxPic">
+									
+								</div>
+								<div class="boxCon">
+									<span class="">영상</span>
+									<span class="">black Nine - survival of the fittest</span>
+									<span class="">11분전</span>
+								</div>
+								<div class="boxBottom">
+									
+								</div>	
+							</div>
+						</div>
+					</div>	
+					<p class="btnBottom">
+						<span class="btnMore"><a href="">더보기</a></span>
+						<span class="btnTop"><a href="">맨위로</a></span>
+					</p>
+				</div> <!-- conBottom end -->
+
+				
+
+			<!-- footer -->
+		
+			<div id="footer">
+				
+				<ul class="footerList">
+					<li class="footerLis1"><a href="">회사소개</a></li>
+					<li><a href="">이용약관</a></li>
+					<li><a href=""><strong>개인정보취급방침</strong></a></li>
+					<li><a href="">청소년보호정책</a></li>
+					<li><a href="">제휴/프로모션문의</a></li>
+					<li><a href="">이메일주소무단수집거부</a></li>
+					<li><a href="">고객센터</a></li>
+					<li><a href="">파트너센터</a></li>
+				</ul>
+			
+				
+				<p>
+					<span class="pSpanfist">서울시 강남구 테헤란로 103길 17 정석빌딩</span><span>대표이사 : 신원수</span><span>사업자등록번호 :  123-13-456789</span>
+					<span>통신판매업 신고번호 : 제2011-서울강남-02008호</span>
+					<span class="pSpanfist">문의전화(평일 09:00~18:00) : 1566-7727(유료)</span><span>&copy; LOEN Entertainment, Inc. All rights reserved</span>
+				</p>
+				
+
+				
+				<ul class="footerBanner">
+					<li><a href=""><img src="images/common/ban_footer01_150210.png" alt="2015 대한민국 퍼스트브랜드 대상" title="2015 대한민국 퍼스트브랜드 대상" /></a></li>
+					<li><a href=""><img src="images/common/ban_footer02_150324.png" alt="한국능률협회컨설팅 2015브랜드 파워 1위" title="한국능률협회컨설팅 2015브랜드 파워 1위" /></a></li>
+					<li><a href=""><img src="images/common/ban_footer04_150210.png" alt="2015 가장 신뢰하는 브랜드 대상" title="2015 가장 신뢰하는 브랜드 대상" /></a></li>
+					<li><a href=""><img src="images/common/ban_footer08.png" alt="2014 국가 브랜드 대상" title="2014 국가 브랜드 대상" /></a></li>
+					<li><a href=""><img src="images/common/ban_footer06.png" alt="음악저작권 이용허락 인증" title="음악저작권 이용허락 인증" /></a></li>
+					<li><a href=""><img src="images/common/ban_footer07.png" alt="클린사이트" title="클린사이트"/></a></li>
+					<li><a href=""><img src="images/common/ban_footer09.png" alt="정보보호 관리체계 ISMS 인증" title="정보보호 관리체계 ISMS 인증" /></a></li>
+				</ul>
+
+			</div>
+
+
+			<!-- footer end -->
+
+			<div class="quick">
+				<dl>
+					<dt><a href="" alt="포트폴리오 바로가기" ><img src="images/common/portfolio_logo.png" alt="포트폴리오 바로가기" /></dt>
+					<dd>
+						<ul>
+							<li><a href="index.html">Melon_Main</a></li>
+							<li><a href="chart.html">Melon_chart</a></li>
+							<li><a href="member.html">Melon_member</a></li>
+							<li><a href="weekly.html">Melon_weekly</a></li>
+							<li><a class="on" href="artplust.html">Melon_artplust</a></li>
+						</ul>
+					</dd>
+				</dl>	
+			</div><!--//quickmenu -->
+
+		</div>  <!-- wrap end -->
+		
+	</body>
+</html>
